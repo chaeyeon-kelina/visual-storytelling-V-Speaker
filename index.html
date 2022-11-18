@@ -1,112 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./main.css" type="text/css" />
-    <title>Document</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <title>Main</title>
     <style>
-      body {
-        background-image: url(./image/background_wood.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      .img {
-        max-width: 70%;
-        display: block;
-      }
+        .img{
+            position: relative;
+            max-width: 190px;
+            display: inline-block;
+        }
     </style>
-  </head>
-  <body>
-    <h1>8년의 추억, 신촌 차없는 거리 다이어리</h1>
+</head>
+<body>
     <div id="container">
-      <div class="div_diary" style="position: relative">
-        <div class="picture_top" style="position: absolute">
-          <p>
-            <img
-              class="img"
-              id="img1"
-              src="./image/festival/festival_1.png"
-              alt=""
-            />
-          </p>
-          <p>
-            <img
-              class="img"
-              id="img2"
-              src="./image/festival/festival_2.png"
-              alt=""
-            />
-          </p>
-          <p>
-            <img
-              class="img"
-              id="img3"
-              src="./image/festival/festival_3.png"
-              alt=""
-            />
-          </p>
-          <p>
-            <img
-              class="img"
-              id="img4"
-              src="./image/festival/festival_4.png"
-              alt=""
-            />
-          </p>
-          <p>
-            <img
-              class="img"
-              id="img5"
-              src="./image/festival/festival_5.png"
-              alt=""
-            />
-          </p>
-        </div>
-        <div class="picture_bottom" style="position: absolute">
-          <p>
-            <img
-              class="img"
-              id="img6"
-              src="./image/festival/festival_6.png"
-              alt=""
-            />
-          </p>
-          <p>
-            <img
-              class="img"
-              id="img_inDiary1"
-              src="./image/festival/festival_img_inDiary1.png"
-              alt=""
-            />
-          </p>
-          <p>
-            <img
-              class="img"
-              id="img_inDiary2"
-              src="./image/festival/festival_img_inDiary2.png"
-              alt=""
-            />
-          </p>
-          <p>
-            <img
-              class="img"
-              id="img_inDiary3"
-              src="./image/festival/festival_img_inDiary3.png"
-              alt=""
-            />
-          </p>
-          <p>
-            <img
-              class="img"
-              id="img10"
-              src="./image/festival/festival_10.png"
-              alt=""
-            />
-          </p>
-        </div>
-        <!-- <div id="text" style="position:absolute; font-size: 0.7em;" >
+
+        <div class="div_diary" style="position:relative">
+            <div class="picture">
+            <div class="picture_top" style="position:absolute">
+                <div><img class="img" id="img1" src="./image/festival/festival_1.png" alt=""></div>
+                <div><img class="img" id="img2" src="./image/festival/festival_2.png" alt=""></div>
+                <div><img class="img" id="img3" src="./image/festival/festival_3.png" alt=""></div>
+                <div><img class="img" id="img4" src="./image/festival/festival_4.png" alt=""></div>
+                <div><img class="img" id="img5" src="./image/festival/festival_5.png" alt=""></div>
+            </div>
+            <div class="picture_bottom" style="position:absolute">
+                <div><img class="img" id="img6" src="./image/festival/festival_6.png" alt=""></div>
+                <div><img class="img" id="img_inDiary1" src="./image/festival/festival_img_inDiary1.png" alt=""></div>
+                <div><img class="img" id="img_inDiary2" src="./image/festival/festival_img_inDiary2.png" alt=""></div>
+                <div><img class="img" id="img_inDiary3" src="./image/festival/festival_img_inDiary3.png" alt=""></div>
+                <div><img class="img" id="img10" src="./image/festival/festival_10.png" alt=""></div>
+            </div> 
+            </div>   
+            <!-- <div id="text" style="position:absolute; font-size: 0.7em;" >
                 <p>
                     신촌 물총 축제는 2013년 신촌 연세로에서 민간주도 행사로 시작하여 2016년부터<br>
                     서울시 브랜드 축제 로 선정된 서울의 대표적인 여름축제이다. 매년 새로운<br>
@@ -165,6 +94,10 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollmonitor/1.0.13/scrollMonitor.js"></script>
+    <script src="./main.js></script>
     <script src="func_turn_page.js"></script>
-  </body>
+</body>
 </html>
