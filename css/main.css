@@ -1,71 +1,79 @@
-
-
 .picture_top {
-    display: flex;
+  display: flex;
 }
 .picture_bottom {
-    display: flex;
+  display: flex;
 }
-.picture_inDiary{
-    display: flex;
+.picture_inDiary {
+  display: flex;
 }
 
-#img1{
-    margin-left: 10%;
-    transform: rotate(-15deg);
+.img:hover {
+  max-width: 220px;
+  transform: rotate(0);
+  z-index: 10;
 }
-#img2{
-    margin-left: 30%;
-    margin-top: 5%;
-    transform: rotate(15deg);
+
+#img1 {
+  top: 50px;
+  left: 200px;
+  transform: rotate(-15deg);
 }
-#img3{
-    margin-left: 60%;
-    margin-top: 30%;
-    transform: rotate(-35deg);
+
+#img2 {
+  top: 50px;
+  left: 200px;
+  transform: rotate(15deg);
 }
-#img4{
-    margin-left: 50%;
-    margin-top: 5%;
-    transform: rotate(15deg);
+#img3 {
+  top: 50px;
+  left: 200px;
+  transform: rotate(-35deg);
 }
-#img5{
-    margin-left: 20%;
-    transform: rotate(-5deg);
+#img4 {
+  top: 50px;
+  left: 200px;
+  transform: rotate(15deg);
 }
-#img6{
-    margin-top: 150%;
-    margin-left: 5%;
-    transform: rotate(10deg);
+#img5 {
+  top: 50px;
+  left: 200px;
+  transform: rotate(-5deg);
 }
-#img_inDiary1{
-    margin-top: 100%;
-    margin-left: -20%;
-    transform: rotate(-15deg);
+#img6 {
+  top: 300px;
+  left: 200px;
+  transform: rotate(10deg);
 }
-#img_inDiary2{
-    margin-top: 190%;
-    margin-left: -25%;
-    transform: rotate(5deg);
+#img_inDiary1 {
+  top: 300px;
+  left: 200px;
+  transform: rotate(-15deg);
 }
-#img_inDiary3{
-    margin-top: 150%;
-    margin-left: -35%;
-    transform: rotate(-15deg);
+#img_inDiary2 {
+  top: 300px;
+  left: 200px;
+  transform: rotate(5deg);
 }
-#img10{
-    margin-top: 220%;
-    margin-left: 20%;
-    transform: rotate(10deg);
+#img_inDiary3 {
+  top: 300px;
+  left: 200px;
+  transform: rotate(-15deg);
+}
+#img10 {
+  top: 300px;
+  left: 200px;
+  transform: rotate(10deg);
 }
 /* #text{
     margin-top: 22%;
     margin-left: 30%;
 } */
 #diary {
-    max-width: 80%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 15%;
-    margin-bottom: 5%;
-  }
+  position: fixed;
+  left: 10%;
+  z-index: -10;
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}
