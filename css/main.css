@@ -65,10 +65,78 @@
   left: 200px;
   transform: rotate(10deg);
 }
+
 /* #text{
     margin-top: 22%;
     margin-left: 30%;
 } */
+
+#img11 {
+  top: 50px;
+  left: 230px;
+  transform: rotate(-15deg);
+}
+#img12 {
+  top: 50px;
+  left: 250px;
+  transform: rotate(5deg);
+}
+#img13 {
+  top: 50px;
+  left: 280px;
+  transform: rotate(-10deg);
+}
+#img14 {
+  top: 50px;
+  left: 300px;
+  transform: rotate(-35deg);
+}
+#img15 {
+  top: 300px;
+  left: 300px;
+  transform: rotate(10deg);
+}
+#img16 {
+  top: 300px;
+  left: 380px;
+  transform: rotate(-15deg);
+}
+#img17 {
+  top: 300px;
+  left: 450px;
+  transform: rotate(-5deg);
+}
+#img18 {
+  top: 50px;
+  left: 230px;
+  transform: rotate(-15deg);
+}
+#img19 {
+  top: 50px;
+  left: 270px;
+  transform: rotate(10deg);
+}
+#img20 {
+  top: 50px;
+  left: 320px;
+  transform: rotate(-5deg);
+}
+#img21 {
+  top: 300px;
+  left: 450px;
+  transform: rotate(5deg);
+}
+#img22 {
+  top: 300px;
+  left: 480px;
+  transform: rotate(25deg);
+}
+#img23 {
+  top: 300px;
+  left: 500px;
+  transform: rotate(-15deg);
+}
+
 #diary {
   position: fixed;
   left: 10%;
