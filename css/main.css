@@ -38,72 +38,76 @@
 #page2 {
   z-index: 0;
 }
-
+.div_diary {
+  margin-top: 5%;
+  margin: 5%;
+}
 .picture_top {
+  margin-bottom: 20px;
   display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 .picture_bottom {
+  margin-top: 20px;
   display: flex;
+  flex-wrap: nowrap;
 }
 .picture_inDiary {
   display: flex;
+  align-items: center;
 }
 
 .img:hover {
-  max-width: 220px;
+  scale: 1.5;
   transform: rotate(0);
   z-index: 10;
 }
 
+.pic {
+  align-self: center;
+  flex-basis: auto;
+}
+
 #img1 {
-  top: 50px;
-  left: 200px;
+  top: 10%;
   transform: rotate(-15deg);
 }
 
 #img2 {
-  top: 50px;
-  left: 200px;
+  top: 10%;
   transform: rotate(15deg);
 }
 #img3 {
-  top: 50px;
-  left: 200px;
+  top: 10%;
   transform: rotate(-35deg);
 }
 #img4 {
-  top: 50px;
-  left: 200px;
+  top: 10%;
   transform: rotate(15deg);
 }
 #img5 {
-  top: 50px;
-  left: 200px;
+  top: 10%;
   transform: rotate(-5deg);
 }
 #img6 {
-  top: 300px;
-  left: 200px;
+  top: 10%;
   transform: rotate(10deg);
 }
 #img_inDiary1 {
-  top: 300px;
-  left: 200px;
+  top: 10%;
   transform: rotate(-15deg);
 }
 #img_inDiary2 {
-  top: 300px;
-  left: 200px;
+  top: 10%;
   transform: rotate(5deg);
 }
 #img_inDiary3 {
-  top: 300px;
-  left: 200px;
+  top: 10%;
   transform: rotate(-15deg);
 }
 #img10 {
-  top: 300px;
-  left: 200px;
+  top: 10%;
   transform: rotate(10deg);
 }
 
