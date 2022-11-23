@@ -1,53 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/default.css">
-    <link rel="stylesheet" href="./css/main.css" type="text/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
     <title>Main</title>
     <style>
-        .img{
-            position: relative;
-            max-width: 190px;
-            display: inline-block;
-        }
+      .img {
+        position: relative;
+        max-width: 190px;
+        display: inline-block;
+      }
     </style>
-</head>
-<body>
-    <div id="container">
-
-        <div id="book">
-            <section id="pageSection">
-                <div class="page" id="page1">
-                    <h1>페이지_1</h1>
-                </div>
-
-                <div class="page" id="page2">
-                    <h1>페이지_2</h1>
-                </div>
-            </section>
-        </div>
-
-        <div class="div_diary" style="position:relative">
-            <div class="picture">
-            <div class="picture_top" style="position:absolute">
-                <div><img class="img" id="img1" src="./image/festival/festival_1.png" alt=""></div>
-                <div><img class="img" id="img2" src="./image/festival/festival_2.png" alt=""></div>
-                <div><img class="img" id="img3" src="./image/festival/festival_3.png" alt=""></div>
-                <div><img class="img" id="img4" src="./image/festival/festival_4.png" alt=""></div>
-                <div><img class="img" id="img5" src="./image/festival/festival_5.png" alt=""></div>
+  </head>
+  <body>
+    <!-- <div class="container"> -->
+    <!-- flip_book_ver_1 -->
+    <!-- <div class="pageBg centerClass">
+        <div class="pageWrapper">
+          <div class="page" id="page3">
+            <div class="pageFace front">
+              <h1>front3</h1>
+              <div class="pageFoldRight"></div>
             </div>
-            <div class="picture_bottom" style="position:absolute">
-                <div><img class="img" id="img6" src="./image/festival/festival_6.png" alt=""></div>
-                <div><img class="img" id="img_inDiary1" src="./image/festival/festival_img_inDiary1.png" alt=""></div>
-                <div><img class="img" id="img_inDiary2" src="./image/festival/festival_img_inDiary2.png" alt=""></div>
-                <div><img class="img" id="img_inDiary3" src="./image/festival/festival_img_inDiary3.png" alt=""></div>
-                <div><img class="img" id="img10" src="./image/festival/festival_10.png" alt=""></div>
-            </div> 
-            </div>   
-            <!-- <div id="text" style="position:absolute; font-size: 0.7em;" >
+            <div class="pageFace back">
+              <h1>back3</h1>
+              <div class="pageFoldLeft"></div>
+            </div>
+          </div>
+          <div class="page" id="page2">
+            <div class="pageFace front">
+              <h1>front2</h1>
+              <div class="pageFoldRight"></div>
+            </div>
+            <div class="pageFace back">
+              <h1>back2</h1>
+              <div class="pageFoldLeft"></div>
+            </div>
+          </div>
+          <div class="page" id="page1">
+            <div class="pageFace front">
+              <h1>front1</h1>
+              <div class="pageFoldRight"></div>
+            </div>
+            <div class="pageFace back">
+              <h1>back1</h1>
+              <div class="pageFoldLeft"></div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+    <div class="wrapper">
+      <div class="aspect">
+        <div class="aspect-inner">
+          <div class="flipbook" id="flipbook">
+            <div class="page" id="page_cover">
+              <img src="./image/cover.png" draggable="false" alt="" />
+            </div>
+            <div class="page" id="page_2">
+              <!-- <img
+                src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/02.jpg"
+                draggable="false"
+                alt=""
+              /> -->
+              <div class="section">
+                <img
+                  class="img"
+                  id="img1"
+                  src="./image/festival/festival_1.png"
+                  alt=""
+                />
+                <div>hello this is a article about img1</div>
+              </div>
+              <div class="section">
+                <img
+                  class="img"
+                  id="img2"
+                  src="./image/festival/festival_2.png"
+                  alt=""
+                />
+                <div>article about img2</div>
+              </div>
+              <!-- 
+              <div>
+                <img
+                  class="img"
+                  id="img3"
+                  src="./image/festival/festival_3.png"
+                  alt=""
+                />
+              </div> -->
+            </div>
+            <div class="page" id="page_3">
+              <img
+                src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/03.jpg"
+                draggable="false"
+                alt=""
+              />
+            </div>
+            <div class="page">
+              <img
+                src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/04.jpg"
+                draggable="false"
+                alt=""
+              />
+            </div>
+            <div class="page">
+              <img
+                src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/05.jpg"
+                draggable="false"
+                alt=""
+              />
+            </div>
+            <div class="page">
+              <img
+                src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/06.jpg"
+                draggable="false"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="div_diary" style="position: relative">
+        <div class="picture">
+          <div class="picture_top" style="position: absolute">
+            <div>
+              <img
+                class="img"
+                id="img1"
+                src="./image/festival/festival_1.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="img"
+                id="img2"
+                src="./image/festival/festival_2.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="img"
+                id="img3"
+                src="./image/festival/festival_3.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="img"
+                id="img4"
+                src="./image/festival/festival_4.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="img"
+                id="img5"
+                src="./image/festival/festival_5.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="picture_bottom" style="position: absolute">
+            <div>
+              <img
+                class="img"
+                id="img6"
+                src="./image/festival/festival_6.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="img"
+                id="img_inDiary1"
+                src="./image/festival/festival_img_inDiary1.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="img"
+                id="img_inDiary2"
+                src="./image/festival/festival_img_inDiary2.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="img"
+                id="img_inDiary3"
+                src="./image/festival/festival_img_inDiary3.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="img"
+                id="img10"
+                src="./image/festival/festival_10.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+    <!-- <div id="text" style="position:absolute; font-size: 0.7em;" >
                 <p>
                     신촌 물총 축제는 2013년 신촌 연세로에서 민간주도 행사로 시작하여 2016년부터<br>
                     서울시 브랜드 축제 로 선정된 서울의 대표적인 여름축제이다. 매년 새로운<br>
@@ -64,12 +233,27 @@
                     즐길 수 있다.
                 </p>
             </div> -->
-        <!-- <img id="diary" src="./image/img_diary.png" alt="" /> -->
-        
-    </div>
+    <!-- <img id="diary" src="./image/img_diary.png" alt="" /> -->
+    <!-- </div> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script> -->
+    <!-- <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-1.7.2.js"
+    ></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.js"></script> -->
+    <script src="https://rkei0.csb.app/turn.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollmonitor/1.0.13/scrollMonitor.js"></script>
-    <script src="./main.js></script"></script>
-    <script src="./turn_page.js"></script>
-</body>
+    <script src="./main.js"></script>
+    <!-- <script src="./turn_pages.js"></script> -->
+    <script src="./flipbook_ver2.js"></script>
+  </body>
 </html>

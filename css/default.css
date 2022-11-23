@@ -1,5 +1,204 @@
+html,
 body {
-  background-image: url(../image/background_wood.png);
+  /* background-image: url(../image/background_wood.png);
   background-repeat: repeat-y;
   background-size: cover;
+  height: 100%;
+  margin: 0;
+  overflow: hidden; */
+
+  background-image: url(../image/background_wood.png);
+  background-repeat: repeat;
+  background-size: contain;
+  /* height: 100vh; */
+  width: 100vw;
+  margin: 0;
+  /* overflow: hidden; */
+  overflow: scroll;
+  height: 100000px;
+  background-attachment: fixed;
+}
+
+/* flipbook ver.1 */
+
+/* 
+.centerClass {
+  position: absolute;
+  left: 10%;
+  top: 5%;
+}
+
+.pageBg {
+  background-color: white;
+  width: 1200px;
+  height: 630px;
+  border-radius: 0px;
+}
+
+.pageWrapper {
+  position: relative;
+  width: 599px;
+  height: 630px;
+  float: left;
+  -webkit-font-smoothing: antialiased;
+  //background-color: blueviolet;
+}
+
+.pageFace {
+  position: absolute;
+  width: 599px;
+  height: 630px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.front {
+  background: linear-gradient(
+    to right,
+    #d9d9d9 0%,
+    #f9f9f9 3%,
+    #ffffff 8%,
+    #ffffff 100%
+  );
+}
+
+
+// #page1 > .front {
+//  background-image: url("../image/busking/busking_1.png");
+//  background-size: cover;
+//}
+
+.back {
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #ffffff 92%,
+    #f9f9f9 97%,
+    #d9d9d9 100%
+  );
+  //background-image: url("../image/festival/festival_1.png");
+  //background-size: cover;
+}
+
+.pageFoldRight {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: 0;
+  right: 0;
+  border-left-width: 1px;
+  border-left-color: #dddddd;
+  border-left-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #dddddd;
+  border-bottom-style: solid;
+  box-shadow: -5px 5px 10px #dddddd;
+}
+
+.pageFoldLeft {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: 0;
+  left: 0;
+  border-right-width: 1px;
+  border-right-color: #dddddd;
+  border-right-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #dddddd;
+  border-bottom-style: solid;
+  box-shadow: 5px 5px 10px #dddddd;
+} 
+*/
+
+/* flipbook ver.2 */
+
+.wrapper {
+  /* align-items: center;
+  display: flex;
+  justify-content: center; */
+  width: 192 * 4;
+  height: 108 * 4;
+
+  margin-left: 5%;
+
+  position: fixed;
+  top: 0;
+  padding-left: 110px;
+  padding-top: 20px;
+}
+
+.aspect {
+  padding-bottom: 70%;
+  position: relative;
+  width: 100%;
+}
+
+.aspect-inner {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.flipbook {
+  width: 192 * 4;
+  height: 108 * 4;
+  /* height: 100%; */
+  transition: margin-left 0.25s ease-out;
+  /* width: 100%; */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.flipbook .page {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+.flipbook .page img {
+  max-width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#page_cover > img {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+}
+
+#page_2 div {
+  width: 10%;
+}
+
+#page_2 .section img {
+  position: absolute;
+  max-width: 30%;
+  height: auto;
+  top: 4%;
+  left: 6%;
+  transform: rotate(50rad);
+  float: left;
+}
+
+#page_2 .section div {
+  position: absolute;
+  float: right;
+}
+
+#page_2 div #img2 {
+  position: absolute;
+  max-width: 30%;
+  height: auto;
+  top: 52%;
+  left: 59%;
+  transform: rotate(-50rad);
 }
