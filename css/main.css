@@ -1,8 +1,26 @@
+html {
+  overflow: hidden;
+}
+
+html,
+body {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
 * {
   box-sizing: border-box;
 }
 
-#book {
+/* #book {
   width: 800px;
   height: 200px;
   margin: 50px;
@@ -41,19 +59,23 @@
 
 #page2 {
   z-index: 0;
-}
+} */
+
 .div_diary {
-  margin-top: 5%;
-  margin: 5%;
+  padding: 30px;
 }
+.picture {
+  padding: 50px;
+}
+
 .picture_top {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
 }
 .picture_bottom {
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
   flex-wrap: nowrap;
 }
@@ -94,118 +116,60 @@
   box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-#img1 {
+.topic {
+  font-family: "Jua", serif;
+  font-size: 30px;
+}
+span.highlight {
+  color: lightgreen;
+}
+
+/* 사진 배치 */
+.picture_top .pic:nth-of-type(5n + 1) > img {
   top: 10%;
   transform: rotate(-15deg);
 }
-
-#img2 {
+.picture_top .pic:nth-of-type(5n + 2) > img {
   top: 10%;
   transform: rotate(5deg);
 }
-#img3 {
+.picture_top .pic:nth-of-type(5n + 3) > img {
   top: 10%;
   transform: rotate(-25deg);
 }
-#img4 {
+.picture_top .pic:nth-of-type(5n + 4) > img {
   top: 10%;
   transform: rotate(15deg);
 }
-#img5 {
+.picture_top .pic:nth-of-type(5n + 5) > img {
   top: 10%;
   transform: rotate(-5deg);
 }
-#img6 {
+.picture_bottom .pic:nth-of-type(5n + 1) > img {
   top: 10%;
   transform: rotate(10deg);
 }
-#img_inDiary1 {
+.picture_bottom .pic:nth-of-type(5n + 2) > img {
   top: 10%;
   transform: rotate(-15deg);
 }
-#img_inDiary2 {
+.picture_bottom .pic:nth-of-type(5n + 3) > img {
   top: 10%;
   transform: rotate(5deg);
 }
-#img_inDiary3 {
+.picture_bottom .pic:nth-of-type(5n + 4) > img {
   top: 10%;
   transform: rotate(-15deg);
 }
-#img10 {
+.picture_bottom .pic:nth-of-type(5n + 5) > img {
   top: 10%;
-  transform: rotate(5deg);
+  transform: rotate(15deg);
 }
 
 /* #text{
     margin-top: 22%;
     margin-left: 30%;
 } */
-
-#img11 {
-  top: 50px;
-  left: 230px;
-  transform: rotate(-15deg);
-}
-#img12 {
-  top: 50px;
-  left: 250px;
-  transform: rotate(5deg);
-}
-#img13 {
-  top: 50px;
-  left: 280px;
-  transform: rotate(-10deg);
-}
-#img14 {
-  top: 50px;
-  left: 300px;
-  transform: rotate(-35deg);
-}
-#img15 {
-  top: 300px;
-  left: 300px;
-  transform: rotate(10deg);
-}
-#img16 {
-  top: 300px;
-  left: 380px;
-  transform: rotate(-15deg);
-}
-#img17 {
-  top: 300px;
-  left: 450px;
-  transform: rotate(-5deg);
-}
-#img18 {
-  top: 50px;
-  left: 230px;
-  transform: rotate(-15deg);
-}
-#img19 {
-  top: 50px;
-  left: 270px;
-  transform: rotate(10deg);
-}
-#img20 {
-  top: 50px;
-  left: 320px;
-  transform: rotate(-5deg);
-}
-#img21 {
-  top: 300px;
-  left: 450px;
-  transform: rotate(5deg);
-}
-#img22 {
-  top: 300px;
-  left: 530px;
-  transform: rotate(5deg);
-}
-#img23 {
-  top: 300px;
-  left: 550px;
-  transform: rotate(-15deg);
-}
 
 /* #diary {
   position: fixed;
