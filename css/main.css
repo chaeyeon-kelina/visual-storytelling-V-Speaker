@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 #book {
   width: 800px;
   height: 200px;
@@ -58,15 +62,36 @@
   align-items: center;
 }
 
-.img:hover {
-  scale: 1.5;
-  transform: rotate(0);
+/* 이미지 hover effect */
+.pic:hover .img {
+  transform: scale(1.4) rotate(0deg) !important;
   z-index: 10;
+  filter: none;
+  transition: all 0.5s;
+}
+.pic:hover {
+  filter: none;
+  transform: scale(1);
+}
+/* .img:hover {
+  transform: scale(1.3, 1.3) rotate(0deg) !important;
+  z-index: 10;
+  filter: none;
+  transition: all 0.35s;
+} */
+.picture:hover .pic {
+  filter: grayscale(100%);
+}
+.picture .pic:hover {
+  filter: none;
 }
 
 .pic {
   align-self: center;
   flex-basis: auto;
+}
+.img {
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 #img1 {
@@ -76,11 +101,11 @@
 
 #img2 {
   top: 10%;
-  transform: rotate(15deg);
+  transform: rotate(5deg);
 }
 #img3 {
   top: 10%;
-  transform: rotate(-35deg);
+  transform: rotate(-25deg);
 }
 #img4 {
   top: 10%;
@@ -108,7 +133,7 @@
 }
 #img10 {
   top: 10%;
-  transform: rotate(10deg);
+  transform: rotate(5deg);
 }
 
 /* #text{
