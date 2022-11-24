@@ -1,4 +1,6 @@
 @import url("https://webfontworld.github.io/kotra/KotraHope.css");
+@import url("https://webfontworld.github.io/Montserrat/Montserrat.css");
+
 html {
   overflow: hidden;
 }
@@ -24,6 +26,7 @@ body {
 #cover {
   width: 80%;
   margin-left: 10%;
+  animation: fadeInUp 2s;
 }
 .div_diary {
   padding: 30px;
@@ -115,13 +118,13 @@ span.keyword {
 }
 
 @keyframes keyword {
-  0% {
+  25% {
     color: rgb(128, 194, 255);
   }
-  30% {
+  50% {
     color: rgb(36, 149, 255);
   }
-  70% {
+  75% {
     color: rgb(0, 110, 255);
   }
   100% {
@@ -181,10 +184,34 @@ span.keyword {
   transform: rotate(5deg);
 }
 
-/* #text{
-    margin-top: 22%;
-    margin-left: 30%;
-} */
+/*6페이지*/
+.wrapper {
+  display: flex;
+  margin-top: 3%;
+  margin-left: 10%;
+}
+#src {
+  font-family: "Montserrat";
+  font-size: 0.95rem;
+  margin-left: 12%;
+  margin-top: 5%;
+}
+#title {
+  font-family: "Montserrat";
+  font-size: 2.3rem;
+  margin-top: 3%;
+  margin-left: 15%;
+}
+#text {
+  font-family: "KotraHope";
+  font-size: 2.95rem;
+  margin-left: 15%;
+  width: 50%;
+  margin-bottom: 10px;
+  color: rgb(167, 224, 255);
+  -webkit-text-stroke: 1px rgb(0, 42, 86);
+  display: inline-block;
+}
 
 #diary {
   top: 0%;
@@ -203,9 +230,40 @@ span.keyword {
 #img35 {
   width: 50%;
 }
+#img31 {
+  transform: rotate(-15deg);
+}
+#img32 {
+  transform: rotate(5deg);
+}
+#img33 {
+  transform: rotate(-10deg);
+}
+#img34 {
+  transform: rotate(25deg);
+}
+#img35 {
+  transform: rotate(-5deg);
+}
 .members {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 5%;
+}
+
+#end {
+  width: 80%;
+  margin-left: 10%;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
 }
