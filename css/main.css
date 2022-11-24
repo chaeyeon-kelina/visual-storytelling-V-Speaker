@@ -293,3 +293,11 @@
   border-bottom-style: solid;
   box-shadow: 5px 5px 10px #dddddd;
 }
+
+/* 설명 추가 */
+.des {
+  font-family: "KotraHope";
+  font-size: 1rem;
+  background-color: rgb(189, 189, 189);
+  display: none;
+}
