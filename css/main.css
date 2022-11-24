@@ -1,59 +1,47 @@
+@import url("https://webfontworld.github.io/kotra/KotraHope.css");
+@import url("https://webfontworld.github.io/Montserrat/Montserrat.css");
+
+html {
+  overflow: hidden;
+}
+
+html,
+body {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
 * {
   box-sizing: border-box;
 }
 
-#book {
-  width: 800px;
-  height: 200px;
-  margin: 50px;
-}
-
-#pageSection {
-  position: fixed;
-  width: 500px;
-  height: 600px;
-  margin-left: 695px;
-  perspective: 1000px;
-}
-
-.page {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 0 32px;
-  background-color: #ffffff;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4), -2px 0 2px rgba(0, 0, 0, 0.4);
-  width: 100%;
-  height: 100%;
-}
-
-#page1 {
-  z-index: 1;
-  transform-origin: left center;
-  transition-duration: 1s;
-  transition-timing-function: ease-in;
-}
-
-#page1:hover {
-  transform: rotateY(-180deg);
-  opacity: 0.4;
-}
-
-#page2 {
-  z-index: 0;
+#cover {
+  width: 80%;
+  margin-left: 10%;
+  animation: fadeInUp 2s;
 }
 .div_diary {
-  margin-top: 5%;
-  margin: 5%;
+  padding: 30px;
 }
+.picture {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 .picture_top {
-  margin-bottom: 20px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
 }
 .picture_bottom {
-  margin-top: 20px;
   display: flex;
   flex-wrap: nowrap;
 }
@@ -65,12 +53,13 @@
 /* 이미지 hover effect */
 .pic:hover .img {
   transform: scale(1.4) rotate(0deg) !important;
-  z-index: 10;
+  z-index: 20;
   filter: none;
   transition: all 0.5s;
 }
 .pic:hover {
   filter: none;
+  z-index: 20;
   transform: scale(1);
 }
 /* .img:hover {
@@ -90,208 +79,193 @@
   align-self: center;
   flex-basis: auto;
 }
-.img {
+/* .img {
   box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.2);
-}
-
-#img1 {
-  top: 10%;
-  transform: rotate(-15deg);
-}
-
-#img2 {
-  top: 10%;
-  transform: rotate(5deg);
-}
-#img3 {
-  top: 10%;
-  transform: rotate(-25deg);
-}
-#img4 {
-  top: 10%;
-  transform: rotate(15deg);
-}
-#img5 {
-  top: 10%;
-  transform: rotate(-5deg);
-}
-#img6 {
-  top: 10%;
-  transform: rotate(10deg);
-}
-#img_inDiary1 {
-  top: 10%;
-  transform: rotate(-15deg);
-}
-#img_inDiary2 {
-  top: 10%;
-  transform: rotate(5deg);
-}
-#img_inDiary3 {
-  top: 10%;
-  transform: rotate(-15deg);
-}
-#img10 {
-  top: 10%;
-  transform: rotate(5deg);
-}
-
-/* #text{
-    margin-top: 22%;
-    margin-left: 30%;
 } */
 
-#img11 {
-  top: 50px;
-  left: 230px;
-  transform: rotate(-15deg);
+.topic {
+  font-family: "KotraHope";
+  font-size: 2.95rem;
+  margin-left: 12%;
+  margin-bottom: 10px;
+  transform: scale(0.9);
+  color: rgb(167, 224, 255);
+  -webkit-text-stroke: 1px rgb(0, 42, 86);
+  display: inline-block;
 }
-#img12 {
-  top: 50px;
-  left: 250px;
-  transform: rotate(5deg);
+span.highlight {
+  color: rgb(255, 238, 0);
+  animation: highlight 0.5s infinite;
 }
-#img13 {
-  top: 50px;
-  left: 280px;
-  transform: rotate(-10deg);
-}
-#img14 {
-  top: 50px;
-  left: 300px;
-  transform: rotate(-35deg);
-}
-#img15 {
-  top: 300px;
-  left: 300px;
-  transform: rotate(10deg);
-}
-#img16 {
-  top: 300px;
-  left: 380px;
-  transform: rotate(-15deg);
-}
-#img17 {
-  top: 300px;
-  left: 450px;
-  transform: rotate(-5deg);
-}
-#img18 {
-  top: 50px;
-  left: 230px;
-  transform: rotate(-15deg);
-}
-#img19 {
-  top: 50px;
-  left: 270px;
-  transform: rotate(10deg);
-}
-#img20 {
-  top: 50px;
-  left: 320px;
-  transform: rotate(-5deg);
-}
-#img21 {
-  top: 300px;
-  left: 450px;
-  transform: rotate(5deg);
-}
-#img22 {
-  top: 300px;
-  left: 530px;
-  transform: rotate(5deg);
-}
-#img23 {
-  top: 300px;
-  left: 550px;
-  transform: rotate(-15deg);
+span.keyword {
+  color: rgb(0, 94, 255);
+  animation: keyword 1s infinite;
 }
 
-/* #diary {
-  position: fixed;
+@keyframes highlight {
+  0% {
+    color: rgb(255, 174, 0);
+  }
+  30% {
+    color: rgb(255, 238, 0);
+  }
+  70% {
+    color: rgb(255, 183, 0);
+  }
+  100% {
+    color: rgb(255, 238, 0);
+  }
+}
+
+@keyframes keyword {
+  25% {
+    color: rgb(128, 194, 255);
+  }
+  50% {
+    color: rgb(36, 149, 255);
+  }
+  75% {
+    color: rgb(0, 110, 255);
+  }
+  100% {
+    color: rgb(36, 149, 255);
+  }
+}
+
+/* 사진 배치 */
+.picture_top .pic:nth-of-type(5n + 1) > img {
+  top: 10%;
+  left: 25%;
+  transform: rotate(-15deg);
+}
+.picture_top .pic:nth-of-type(5n + 2) > img {
+  top: 10%;
+  left: 25%;
+  transform: rotate(5deg);
+}
+.picture_top .pic:nth-of-type(5n + 3) > img {
+  top: 10%;
+  left: 55%;
+  transform: rotate(-25deg);
+}
+.picture_top .pic:nth-of-type(5n + 4) > img {
+  top: 10%;
+  left: 20%;
+  transform: rotate(15deg);
+}
+.picture_top .pic:nth-of-type(5n + 5) > img {
+  top: 10%;
+  left: -10%;
+  transform: rotate(-5deg);
+}
+.picture_bottom .pic:nth-of-type(5n + 1) > img {
+  margin-top: 20%;
+  left: 10%;
+  transform: rotate(10deg);
+}
+.picture_bottom .pic:nth-of-type(5n + 2) > img {
+  top: 0%;
+  left: -20%;
+  transform: rotate(-15deg);
+}
+.picture_bottom .pic:nth-of-type(5n + 3) > img {
+  margin-top: 20%;
+  left: -50%;
+  transform: rotate(5deg);
+}
+.picture_bottom .pic:nth-of-type(5n + 4) > img {
+  top: 10%;
+  left: -30%;
+  transform: rotate(-10deg);
+}
+.picture_bottom .pic:nth-of-type(5n + 5) > img {
+  top: 10%;
+  left: -30%;
+  transform: rotate(5deg);
+}
+
+/*6페이지*/
+.wrapper {
+  display: flex;
+  margin-top: 3%;
+  margin-left: 10%;
+}
+#src {
+  font-family: "Montserrat";
+  font-size: 0.95rem;
+  margin-left: 12%;
+  margin-top: 5%;
+}
+#title {
+  font-family: "Montserrat";
+  font-size: 2.3rem;
+  margin-top: 3%;
+  margin-left: 15%;
+}
+#text {
+  font-family: "KotraHope";
+  font-size: 2.95rem;
+  margin-left: 15%;
+  width: 50%;
+  margin-bottom: 10px;
+  color: rgb(167, 224, 255);
+  -webkit-text-stroke: 1px rgb(0, 42, 86);
+  display: inline-block;
+}
+
+#diary {
+  top: 0%;
+  position: absolute;
   left: 10%;
   z-index: -10;
   max-width: 80%;
   display: block;
   margin: 0 auto;
-} */
+}
 
-.centerClass {
-  position: absolute;
-  left: 50%;
-  top: 50%;
+#img31,
+#img32,
+#img33,
+#img34,
+#img35 {
+  width: 50%;
 }
-.pageBg {
-  background-color: #ffffff;
-  width: 652px;
-  height: 422px;
-  border-radius: 0px;
+#img31 {
+  transform: rotate(-15deg);
 }
-.spineCenter {
-  width: 2px;
-  height: 422px;
-  border-radius: 0px;
-  background: rgba(101, 101, 101, 0.4);
+#img32 {
+  transform: rotate(5deg);
 }
-.pageWrapper {
-  position: relative;
-  width: 325px;
-  height: 422px;
-  float: left;
-  -webkit-font-smoothing: antialiased;
+#img33 {
+  transform: rotate(-10deg);
 }
-.pageFace {
-  position: absolute;
-  width: 325px;
-  height: 422px;
-  overflow: hidden;
-  text-align: center;
+#img34 {
+  transform: rotate(25deg);
 }
-.front {
-  background: linear-gradient(
-    to right,
-    #d9d9d9 0%,
-    #f9f9f9 3%,
-    #ffffff 8%,
-    #ffffff 100%
-  );
+#img35 {
+  transform: rotate(-5deg);
 }
-.back {
-  background: linear-gradient(
-    to right,
-    #ffffff 0%,
-    #ffffff 92%,
-    #f9f9f9 97%,
-    #d9d9d9 100%
-  );
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5%;
 }
-.pageFoldRight {
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  top: 0;
-  right: 0;
-  border-left-width: 1px;
-  border-left-color: #dddddd;
-  border-left-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #dddddd;
-  border-bottom-style: solid;
-  box-shadow: -5px 5px 10px #dddddd;
+
+#end {
+  width: 80%;
+  margin-left: 10%;
 }
-.pageFoldLeft {
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  top: 0;
-  left: 0;
-  border-right-width: 1px;
-  border-right-color: #dddddd;
-  border-right-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #dddddd;
-  border-bottom-style: solid;
-  box-shadow: 5px 5px 10px #dddddd;
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
 }
 
 /* 설명 추가 */
