@@ -1,79 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/default.css">
-    <link rel="stylesheet" href="./css/main.css" type="text/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jua" />
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./main.js"></script>
     <title>Main</title>
     <style>
-        .img{
-            position: relative;
-            max-width:70%;
-            height:auto; 
-            display: block;
-            margin: 0 auto;
-        }
+      .img {
+        position: relative;
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="container">
-
-        <div id="book" style="position:absolute">
-            <section id="pageSection">
-                <div class="page" id="page1">
-                    <h1>페이지_1</h1>
-                </div>
-
-                <div class="page" id="page2">
-                    <h1>페이지_2</h1>
-                </div>
-            </section>
+      <div class="section" id="section0">
+        <div>
+          <img id="cover" src="./image/cover.png" alt="cover img" />
         </div>
+      </div>
 
-        <div class="div_diary" style="position:relative">
-            <div class="picture">
-            <div class="picture_top" style="position:relative">
-                <div class="pic"><img class="img" id="img1" src="./image/festival/festival_1.png" alt=""></div>
-                <div class="pic"><img class="img" id="img2" src="./image/festival/festival_2.png" alt=""></div>
-                <div class="pic"><img class="img" id="img3" src="./image/festival/festival_3.png" alt=""></div>
-                <div class="pic"><img class="img" id="img4" src="./image/festival/festival_4.png" alt=""></div>
-                <div class="pic"><img class="img" id="img5" src="./image/festival/festival_5.png" alt=""></div>
+      <div class="section" id="section1">
+        <div>
+          <img id="diary" src="./image/img_diary.png" />
+        </div>
+      </div>
+
+      <div class="section" id="section2">
+        <div class="div_diary" style="position: relative">
+          <img id="diary" src="./image/img_diary.png" />
+          <div class="topic">
+            # <span class="keyword">신촌로</span>의 가지각색
+            <span class="highlight">축제</span>
+            이야기
+          </div>
+          <div class="picture">
+            <div class="picture_top" style="position: relative">
+              <div class="pic">
+                <img
+                  class="img"
+                  id="img1"
+                  src="./image/festival/festival_1.png"
+                />
+              </div>
+              <div class="pic">
+                <img
+                  class="img"
+                  id="img2"
+                  src="./image/festival/festival_2.png"
+                />
+              </div>
+              <div class="pic">
+                <img
+                  class="img"
+                  id="img3"
+                  src="./image/festival/festival_3.png"
+                />
+              </div>
+              <div class="pic">
+                <img
+                  class="img"
+                  id="img4"
+                  src="./image/festival/festival_4.png"
+                />
+              </div>
+              <div class="pic">
+                <img
+                  class="img"
+                  id="img5"
+                  src="./image/festival/festival_5.png"
+                />
+              </div>
             </div>
-            <div class="picture_bottom" style="position:relative">
-                <div class="pic"><img class="img" id="img6" src="./image/festival/festival_6.png" alt=""></div>
-                <div class="pic"><img class="img" id="img_inDiary1" src="./image/festival/festival_img_inDiary1.png" alt=""></div>
-                <div class="pic"><img class="img" id="img_inDiary2" src="./image/festival/festival_img_inDiary2.png" alt=""></div>
-                <div class="pic"><img class="img" id="img_inDiary3" src="./image/festival/festival_img_inDiary3.png" alt=""></div>
-                <div class="pic"><img class="img" id="img10" src="./image/festival/festival_10.png" alt=""></div>
-            </div> 
-            </div>   
-            <!-- <div id="text" style="position:absolute; font-size: 0.7em;" >
-                <p>
-                    신촌 물총 축제는 2013년 신촌 연세로에서 민간주도 행사로 시작하여 2016년부터<br>
-                    서울시 브랜드 축제 로 선정된 서울의 대표적인 여름축제이다. 매년 새로운<br>
-                    축제 메인 테마를 선정하고 그에 맞는 다양한 축제 이벤트가 진행되는 것이<br>
-                    특징이며, 도심속에서 즐길 수 있는 이색적인 여름축제로 명성이 높다.<br>
-                    2016년 '해적vs시민 물총대전', 2017년 '외계인vs지구인 물총대전',<br>
-                    2018년 '안드로이드vs인간 물총대전'에 이어 2019년 개최된 신촌 물총 축제의<br>
-                    메인 테마는 <왕국 탈환>이다.
-                    신촌 연세로에 축제 메인 테마에 맞는 축제장을 구성하고, 7월 중 2일동안<br>
-                    축제를 진행한다. 주요 행사로는 남녀노소 누구나 참여할 수 있는 물총대전과<br>
-                    메인 무대를 중심으로 디제잉 파티가 진행되고, 아이들을 위한 키즈존이<br>
-                    한편에 마련되어 어린이들도 즐길 수 있는 축제이다. 또한 워터어트렉션,<br>
-                    버블파티, 스트릿댄스 등의 이벤트를 통해 도심속에서 이색적인 물축제를<br>
-                    즐길 수 있다.
-                </p>
-            </div> -->
-        <!-- <img id="diary" src="./image/img_diary.png" alt="" /> -->
-        
-    </div>
+            <div class="picture_bottom" style="position: relative">
+              <div class="pic">
+                <img
+                  class="img"
+                  id="img6"
+                  src="./image/festival/festival_6.png"
+                />
+              </div>
+              <div class="pic">
+                <img
+                  class="img"
+                  id="img7"
+                  src="./image/festival/festival_7.png"
+                />
+              </div>
+              <div class="pic">
+                <img
+                  class="img"
+                  id="img8"
+                  src="./image/festival/festival_8.png"
+                />
+              </div>
+              <div class="pic">
+                <img
+                  class="img"
+                  id="img9"
+                  src="./image/festival/festival_9.png"
+                />
+              </div>
+              <div class="pic">
+                <img
+                  class="img"
+                  id="img10"
+                  src="./image/festival/festival_10.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="section" id="section3">
+        <div class="div_diary" style="position: relative">
+          <img id="diary" src="./image/img_diary.png" />
+          <div class="topic">
+            # <span class="highlight">버스킹</span>의 성지, '<span
+              class="keyword"
+              >신촌로</span
+            >'
+          </div>
+          <div class="picture">
+            <div class="picture_top" style="position: relative">
+              <div class="pic">
+                <img
+                  class="img"
+                  id="img11"
+                  src="./image/busking/busking_1.png"
+                />
+              </div>
+              <div class="pic">
+                <img
+                  class="img"
+                  id="img12"
+                  src="./image/busking/busking_2.png"
+                />
+              </div>
+              <div class="pic">
+                <img
+                  class="img"
+                  id="img13"
+                  src="./image/busking/busking_3.png"
+                />
+              </div>
+              <div class="pic">
+                <img
+                  class="img"
+                  id="img14"
+                  src="./image/busking/busking_4.png"
+                />
+              </div>
+              <div class="pic">
+                <img
+                  class="img"
+                  id="img15"
+                  src="./image/busking/busking_5.png"
+                />
+              </div>
+            </div>
+            <div class="picture_bottom" style="position: relative">
+              <div class="pic">
+                <img
+                  class="img"
+                  id="img16"
+                  src="./image/busking/busking_6.png"
+                />
+              </div>
+              <div class="pic">
+                <img
+                  class="img"
+                  id="img17"
+                  src="./image/busking/busking_7.png"
+                />
+              </div>
+              <div class="pic">
+                <img
+                  class="img"
+                  id="img18"
+                  src="./image/busking/busking_8.png"
+                />
+              </div>
+              <div class="pic">
+                <img
+                  class="img"
+                  id="img19"
+                  src="./image/busking/busking_9.png"
+                />
+              </div>
+              <div class="pic">
+                <img
+                  class="img"
+                  id="img20"
+                  src="./image/busking/busking_10.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="section4">
+        <div class="div_diary" style="position: relative">
+          <img id="diary" src="./image/img_diary.png" />
+          <div class="topic">
+            # 함께 걷는 <span class="highlight">거리</span>,
+            <span class="keyword">신촌로</span>
+          </div>
+          <div class="picture">
+            <div class="picture_top" style="position: relative">
+              <div class="pic">
+                <img class="img" id="img21" src="./image/street/street_1.png" />
+              </div>
+              <div class="pic">
+                <img class="img" id="img22" src="./image/street/street_2.png" />
+              </div>
+              <div class="pic">
+                <img class="img" id="img23" src="./image/street/street_3.png" />
+              </div>
+              <div class="pic">
+                <img class="img" id="img24" src="./image/street/street_4.png" />
+              </div>
+              <div class="pic">
+                <img class="img" id="img25" src="./image/street/street_5.png" />
+              </div>
+            </div>
+            <div class="picture_bottom" style="position: relative">
+              <div class="pic">
+                <img class="img" id="img26" src="./image/street/street_6.png" />
+              </div>
+              <div class="pic">
+                <img class="img" id="img27" src="./image/street/street_7.png" />
+              </div>
+              <div class="pic">
+                <img class="img" id="img28" src="./image/street/street_8.png" />
+              </div>
+              <div class="pic">
+                <img class="img" id="img29" src="./image/street/street_9.png" />
+              </div>
+              <div class="pic">
+                <img
+                  class="img"
+                  id="img30"
+                  src="./image/street/street_10.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="section5">
+        <div class="div_diary" style="position: relative">
+          <img id="diary" src="./image/img_diary.png" />
+          <div class="wrapper">
+            <div class="src">
+              <div id="title">IMAGE</div>
+              <div id="src">
+                -https://www.sdm.go.kr/index.do<br />
+                -https://ko-kr.facebook.com/shinchonbeer/ <br />
+                -@seoul_guardian<br />
+                -@seodaemun_official<br />
+                -@travelwithsera <br />
+                -@seoulnow<br />
+                -https://www.youtube.com/watch?v=GwZOwdh6BPk<br />
+                -https://www.insight.co.kr/news/124159<br />
+                -https://theqoo.net/square/502085386<br />
+                -https://news.nate.com/view/20190507n06311<br />
+                -https://sports.khan.co.kr/entertainment/sk_index.<br />html?
+                art_id=202210172224003&sec_id=540301<br />
+                -https://yepes.tistory.com/183<br />
+                -https://www.youtube.com/watch?v=yq4pRr1KHlc<br />
+                -https://ent.sbs.co.kr/news/article.do?article_id=E10010260266<br />
+                -https://m.blog.naver.com/nabilra3/222883719112<br />
+                -https://twitter.com/hashtag/%EB%8D%94%EB%A6<br />%AC
+                %EC%8A%A8?src=hash&ref_src=twsrc%5Etfw<br />
+              </div>
+            </div>
+            <div id="text">
+              신촌 차 없는 거리의 <br /><span class="keyword">추억</span>을
+              공유해주세요!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="section6">
+        <img id="end" src="./image/cover.png" alt="cover img" />
+      </div>
+
+      <div class="section" id="section7">
+        <div class="members">
+          <div class="member" id="member1">
+            <img class="img" id="img31" src="./image/member_1.png" />
+          </div>
+          <div class="member" id="member1">
+            <img class="img" id="img32" src="./image/member_1.png" />
+          </div>
+          <div class="member" id="member1">
+            <img class="img" id="img33" src="./image/member_1.png" />
+          </div>
+          <div class="member" id="member1">
+            <img class="img" id="img34" src="./image/member_1.png" />
+          </div>
+          <div class="member" id="member1">
+            <img class="img" id="img35" src="./image/member_1.png" />
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollmonitor/1.0.13/scrollMonitor.js"></script>
     <script src="./main.js></script"></script>
     <script src="./turn_page.js"></script>
-</body>
+  </body>
 </html>
