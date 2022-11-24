@@ -90,7 +90,7 @@ body {
   margin-bottom: 10px;
   transform: scale(0.9);
   color: rgb(167, 224, 255);
-  -webkit-text-stroke: 1px rgb(0, 42, 86);
+  -webkit-text-stroke: 1.5px rgb(0, 42, 86);
   display: inline-block;
 }
 span.highlight {
@@ -209,7 +209,7 @@ span.keyword {
   width: 50%;
   margin-bottom: 10px;
   color: rgb(167, 224, 255);
-  -webkit-text-stroke: 1px rgb(0, 42, 86);
+  -webkit-text-stroke: 1.5px rgb(0, 42, 86);
   display: inline-block;
 }
 
@@ -266,12 +266,4 @@ span.keyword {
     opacity: 1;
     transform: translateZ(0);
   }
-}
-
-/* 설명 추가 */
-.des {
-  font-family: "KotraHope";
-  font-size: 1rem;
-  background-color: rgb(189, 189, 189);
-  display: none;
 }
