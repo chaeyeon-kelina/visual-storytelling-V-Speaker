@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+    <title>Main</title>
+    <style>
+      .img {
+        position: relative;
+        max-width: 70%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="aspect">
+        <div class="aspect-inner">
+          <div class="flipbook" id="flipbook">
+            <div class="page" id="page_cover">
+              <img src="./image/cover_new.png" draggable="false" />
+            </div>
+            <div
+              class="page"
+              id="page_2"
+              style="background-image: url(./image/img_diary_left.png)"
+            >
+              <div class="section" id="section1">
+                <div class="div_diary" style="position: relative">
+                  <div class="topic">
+                    신촌로의 가지각색<span class="highlight">축제</span>이야기
+                  </div>
+                  <div class="picture">
+                    <div class="picture_top" style="position: relative">
+                      <div class="pic">
+                        <img
+                          class="img"
+                          id="img1"
+                          src="./image/festival/festival_1.png"
+                        />
+                      </div>
+                      <div class="pic">
+                        <img
+                          class="img"
+                          id="img2"
+                          src="./image/festival/festival_2.png"
+                        />
+                      </div>
+                      <div class="pic">
+                        <img
+                          class="img"
+                          id="img3"
+                          src="./image/festival/festival_3.png"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section">
+                <img
+                  class="img"
+                  id="img2"
+                  src="./image/festival/festival_2.png"
+                  alt=""
+                />
+                <div>article about img2</div>
+              </div>
+            </div>
+            <div
+              class="page"
+              id="page_3"
+              style="background-image: url(./image/img_diary_right.png)"
+            ></div>
+            <div
+              class="page"
+              id="page_4"
+              style="background-image: url(./image/img_diary_left.png)"
+            ></div>
+            <div
+              class="page"
+              id="page_5"
+              style="background-image: url(./image/img_diary_right.png)"
+            ></div>
+            <div class="page"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+    <script src="https://rkei0.csb.app/turn.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollmonitor/1.0.13/scrollMonitor.js"></script>
+    <script src="./main.js"></script>
+    <script src="./flipbook_ver2.js"></script>
+  </body>
+</html>

@@ -221,6 +221,7 @@ span.keyword {
   max-width: 80%;
   display: block;
   margin: 0 auto;
+<<<<<<< Updated upstream
 }
 
 #img31,
@@ -267,3 +268,6 @@ span.keyword {
     transform: translateZ(0);
   }
 }
+=======
+} */
+>>>>>>> Stashed changes
