@@ -10,3 +10,7 @@ function clip(){
     document.body.removeChild(textarea);
     alert("URL 복사")
 }
+
+function shareTwitter() {
+    window.open("http://twitter.com/share?url=" + encodeURIComponent(location.href) +"&text=" + document.title);
+}
