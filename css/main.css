@@ -66,9 +66,8 @@ body {
   position: relative;
 }
 
-.cover{
-  display: flex;
-}
+/
+
 * {
   box-sizing: border-box;
 }
