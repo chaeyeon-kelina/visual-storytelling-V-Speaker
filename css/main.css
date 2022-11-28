@@ -19,13 +19,17 @@ body {
   position: relative;
 }
 
+.cover{
+  display: flex;
+}
 * {
   box-sizing: border-box;
 }
 
 #cover {
-  width: 80%;
-  margin-left: 10%;
+  width: 90%;
+  margin-left: 0%;
+  margin-top: 5%;
   animation: fadeInUp 2s;
 }
 
