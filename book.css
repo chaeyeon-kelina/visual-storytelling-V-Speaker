@@ -240,8 +240,9 @@ body {
 #road_content_top {
   width: 420px;
   float: left;
-  font-family: "KotraHope";
-  font-size: 1.3rem;
+  font-family: "SCoreDream";
+  font-size: 0.95rem;
+  font-weight: 400;
   margin-left: 2%;
   margin-top: -3px;
   margin-bottom: 10px;
@@ -251,8 +252,9 @@ body {
 #road_content_bottom {
   width: 420px;
   float: left;
-  font-family: "KotraHope";
-  font-size: 1.3rem;
+  font-family: "SCoreDream";
+  font-size: 0.95rem;
+  font-weight: 400;
   margin-left: 2%;
   margin-bottom: 10px;
   margin-top: -20px;
@@ -261,26 +263,27 @@ body {
 }
 
 .topic {
-  font-family: "KotraHope";
+  font-family: "EnjoyStories";
   font-size: 2.95rem;
+  font-weight: 700;
   /* margin-left: 12%; */
   /* margin-bottom: 10px; */
   padding-right: 40px;
   transform: scale(0.9);
-  color: rgb(167, 224, 255);
-  -webkit-text-stroke: 1px rgb(0, 42, 86);
+  color: rgb(74, 74, 74);
+  /* -webkit-text-stroke: 1px rgb(0, 42, 86); */
   display: inline-block;
 }
 span.highlight {
-  color: rgb(255, 238, 0);
+  color: rgb(144, 180, 167);
   animation: highlight 0.5s infinite;
 }
 span.keyword {
-  color: rgb(0, 94, 255);
+  color: rgb(0, 22, 60);
   animation: keyword 1s infinite;
 }
 
-@keyframes highlight {
+/* @keyframes highlight {
   0% {
     color: rgb(255, 174, 0);
   }
@@ -308,20 +311,24 @@ span.keyword {
   100% {
     color: rgb(36, 149, 255);
   }
-}
+} */
 
 /*설명 부분*/
 .title {
-  font-family: "SCoreDream";
-  font-size: 1.7rem;
+  font-family: "EnjoyStories";
+  font-size: 1.95rem;
   font-weight: 700;
+  color: rgb(72, 72, 72);
   /* margin-top: 20px; */
   /* margin-bottom: 10px; */
+}
+.title_span {
+  color: rgb(144, 180, 167);
 }
 .description {
   font-family: "SCoreDream";
   font-size: 0.85rem;
-  font-weight: 300;
+  font-weight: 400;
   /* position: absolute; */
 
   /* left: 51%; */
@@ -333,16 +340,16 @@ span.keyword {
   /* width: 35%; */
 }
 span.bold {
-  font-weight: 500;
+  font-weight: 600;
 }
 span.high_light {
-  font-weight: 400;
+  font-weight: 500;
   background-color: rgb(255, 255, 161);
 }
 .paragraph {
   border-radius: 5px;
   padding: 10px 15px;
-  background-color: rgb(217, 217, 217);
+  /* background-color: rgb(217, 217, 217); */
 }
 
 .key_img > img {
@@ -372,13 +379,13 @@ span.high_light {
   margin-top: 5%;
 }
 #text {
-  font-family: "KotraHope";
+  font-family: "EnjoyStories";
   font-size: 2.5rem;
   margin-left: 0%;
   width: 100%;
   margin-bottom: 10px;
-  color: rgb(167, 224, 255);
-  -webkit-text-stroke: 1px rgb(0, 42, 86);
+  color: rgb(0, 67, 103);
+  /* -webkit-text-stroke: 1px rgb(0, 42, 86); */
   display: inline-block;
   text-align: center;
 }
