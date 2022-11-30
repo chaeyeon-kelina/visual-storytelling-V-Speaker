@@ -5,17 +5,19 @@ window.addEventListener("resize", function (e) {
   flipbookEL.style.height = "";
   $(flipbookEL).turn(
     "size",
-    // flipbookEL.clientWidth * 1.8,
-    "auto",
-    flipbookEL.clientHeight * 0.8
-    // "108px"
+    flipbookEL.clientWidth,
+    // 576.6,
+    flipbookEL.clientHeight
+    // 648
   );
 });
 
 $(flipbookEL).turn({
   autoCenter: true,
+  width: 1153.2,
+  height: 648,
   // width: 100%,
-  // height: 100%,
+  // height: 100%
 });
 
 function addPage(page, book) {

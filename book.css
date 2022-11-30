@@ -12,19 +12,22 @@ body {
   max-width: 100%;
   height: 100vh;
   /* overflow: hidden; */
+  box-sizing: border-box;
 }
 
 .wrapper {
   align-items: center;
   display: flex;
-  height: 90%;
+  height: 100%;
   justify-content: center;
   margin: 5%;
-  width: 90%;
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: 2%;
 }
 
 .aspect {
-  padding-bottom: 70%;
+  padding-bottom: 50%;
   position: relative;
   width: 100%;
 }
@@ -34,7 +37,8 @@ body {
   left: 0;
   position: absolute;
   right: 0;
-  top: 0;
+  /* top: 0; */
+  top: -20px;
 }
 
 .flipbook {
@@ -123,22 +127,24 @@ body {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+  top: 10%;
 }
 .picture_top_right {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  top: 15%;
+  top: 14%;
 }
 .picture_bottom_left {
   display: flex;
   flex-wrap: nowrap;
   padding-left: 80px;
+  top: 10%;
 }
 .picture_bottom_right {
   display: flex;
   flex-wrap: nowrap;
-  top: 18%;
+  top: 14%;
 }
 .picture_inDiary {
   display: flex;
@@ -169,7 +175,7 @@ body {
   flex-basis: auto;
 }
 .pic img {
-  max-width: 140px;
+  max-width: 160px;
 }
 
 /* 사진 배치 */
@@ -202,16 +208,19 @@ body {
   margin-top: 20%;
   left: 10%;
   transform: rotate(10deg);
+  margin-left: 28%;
 }
 .picture_bottom .pic:nth-of-type(5n + 2) > img {
   top: 0%;
   left: -20%;
   transform: rotate(-15deg);
+  margin-left: 28%;
 }
 .picture_bottom .pic:nth-of-type(5n + 3) > img {
   margin-top: 20%;
   left: -50%;
   transform: rotate(5deg);
+  margin-left: 28%;
 }
 .picture_bottom .pic:nth-of-type(5n + 4) > img {
   top: 10%;
@@ -226,7 +235,6 @@ body {
 
 #road_img {
   /* width: 80%; */
-  margin-top: 10%;
   margin-left: 5px;
   /* float: left; */
   width: 100%;
@@ -238,7 +246,7 @@ body {
   margin-top: 3%;
 }
 #road_content_top {
-  width: 420px;
+  width: 90%;
   float: left;
   font-family: "SCoreDream";
   font-size: 0.95rem;
@@ -250,7 +258,7 @@ body {
   color: rgb(0, 42, 86);
 }
 #road_content_bottom {
-  width: 420px;
+  width: 90%;
   float: left;
   font-family: "SCoreDream";
   font-size: 0.95rem;
@@ -356,7 +364,7 @@ span.high_light {
   margin-left: 6%;
   width: 90%;
   float: left;
-  margin-top: 13%;
+  /* margin-top: 13%; */
   transform: rotate(-5deg);
 }
 
@@ -399,11 +407,11 @@ span.high_light {
   margin-top: 20%;
 }
 
-#diary {
+#flipbook {
   top: 0%;
   position: absolute;
   left: 10%;
-  z-index: -10;
+  z-index: 0;
   max-width: 80%;
   display: block;
   margin: 0 auto;
@@ -414,28 +422,36 @@ span.high_light {
 #img33,
 #img34,
 #img35 {
-  width: 80%;
+  width: 50%;
+  /* z-index: 10; */
 }
 #img31 {
   transform: rotate(-15deg);
 }
 #img32 {
   transform: rotate(5deg);
+  float: right;
 }
 #img33 {
   transform: rotate(-10deg);
 }
 #img34 {
-  transform: rotate(25deg);
+  transform: rotate(-15deg);
 }
 #img35 {
-  transform: rotate(-5deg);
+  transform: rotate(5deg);
+  float: right;
 }
 .members {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 5%;
+  width: 100%;
+}
+
+#member4 {
+  margin: -97px;
 }
 
 #end {
@@ -453,3 +469,8 @@ span.high_light {
     transform: translateZ(0);
   }
 }
+
+/* .page-wrapper div {
+  width: 100%;
+  height: 100%;
+} */
