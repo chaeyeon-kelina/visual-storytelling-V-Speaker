@@ -1,39 +1,33 @@
+@import url("https://webfontworld.github.io/kotra/KotraHope.css");
+@import url("https://webfontworld.github.io/Montserrat/Montserrat.css");
+@import url("https://webfontworld.github.io/score/SCoreDream.css");
+@import url("https://webfontworld.github.io/tvn/EnjoyStories.css");
+
 html,
 body {
-  background-image: url(../image/background_wood.png);
-  background-repeat: repeat;
-  background-size: contain;
   /* height: 100vh; */
-  width: 100vw;
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  max-width: 100%;
+  height: 100vh;
   /* overflow: hidden; */
-  overflow: scroll;
-  height: 100000px;
-  background-attachment: fixed;
 }
-
-/* flipbook ver.2 */
 
 .wrapper {
-  /* align-items: center;
+  align-items: center;
   display: flex;
-  justify-content: center; */
-  width: 180 * 4;
-  height: 96 * 4;
-
-  margin-left: 5%;
-
-  position: fixed;
-  top: 0;
-  padding-left: 110px;
-  padding-top: 10%;
+  height: 90%;
+  justify-content: center;
+  margin: 5%;
+  width: 90%;
 }
 
-/* .aspect {
+.aspect {
   padding-bottom: 70%;
   position: relative;
   width: 100%;
-} */
+}
 
 .aspect-inner {
   bottom: 0;
@@ -44,11 +38,9 @@ body {
 }
 
 .flipbook {
-  width: 180 * 4;
-  height: 96 * 4;
-  /* height: 100%; */
+  height: 100%;
   transition: margin-left 0.25s ease-out;
-  /* width: 100%; */
+  width: 100%;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -58,53 +50,399 @@ body {
 }
 
 .flipbook .page {
-  height: 96 * 4;
-  width: 180 * 4;
-  background-color: white;
-  display: flex;
-}
-.section {
-  display: flex;
+  height: 100%;
+  width: 100%;
+  background: white;
 }
 
-.flipbook .page img {
+#cover {
   max-width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
 }
 
-#page_cover > img {
-  position: absolute;
-  width: 100%;
-  object-fit: cover;
+.div_diary {
+  /* max-width: 100%; */
+  /* max-height: 100%; */
+  height: 100%;
+  padding: 10px;
+  /* box-sizing: border-box; */
 }
 
-#page_2 .section img {
+.pg_num {
   position: absolute;
-  width: 70%;
-  height: auto;
-  transform: rotate(50rad);
+  bottom: 7px;
+  left: 50%;
 }
-#page_2 div #img1 {
-  position: absolute;
-  max-width: 100%;
-  height: auto;
+
+.highlight_textbox span {
+  position: relative;
+  display: inline-block;
+  animation: bounce 0.5s ease infinite alternate;
+  font-family: "KotraHope";
+  font-size: 2rem;
+  font-weight: 200;
+  -webkit-text-stroke: 1px rgba(0, 80, 20, 0.762);
+  color: rgb(182, 218, 131);
+  text-shadow: 0 1px 0 rgba(0, 80, 20, 0.762), 0 2px 0 rgba(0, 80, 20, 0.762),
+    0 3px 0 rgba(0, 80, 20, 0.762), 0 4px 0 rgba(0, 80, 20, 0.762),
+    0 5px 0 rgba(0, 80, 20, 0.762), 0 6px 0 transparent, 0 7px 0 transparent,
+    0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 80, 20, 0.762);
+}
+
+.highlight_textbox span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.highlight_textbox span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.highlight_textbox span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.highlight_textbox span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  100% {
+    top: -10px;
+    text-shadow: 0 1px 0 rgba(0, 80, 20, 0.762), 0 2px 0 rgba(0, 80, 20, 0.762),
+      0 3px 0 rgba(0, 80, 20, 0.762), 0 4px 0 rgba(0, 80, 20, 0.762),
+      0 5px 0 rgba(0, 80, 20, 0.762), 0 6px 0 transparent, 0 7px 0 transparent,
+      0 8px 0 transparent, 0 9px 0 transparent,
+      0 10px 10px rgba(0, 80, 20, 0.762);
+  }
+}
+
+.picture {
+  /* padding-left: 10%; */
+  /* padding-right: 10%; */
+  height: 100%;
+}
+
+.picture_top_left {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.picture_top_right {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  top: 15%;
+}
+.picture_bottom_left {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-left: 80px;
+}
+.picture_bottom_right {
+  display: flex;
+  flex-wrap: nowrap;
+  top: 18%;
+}
+.picture_inDiary {
+  display: flex;
+  align-items: center;
+}
+
+/* 이미지 hover effect */
+.pic:hover .img {
+  transform: scale(1.4) rotate(0deg) !important;
+  z-index: 20;
+  filter: none;
+  transition: all 0.5s;
+}
+.pic:hover {
+  filter: none;
+  z-index: 20;
+  transform: scale(1);
+}
+
+.picture .pic {
+  filter: grayscale(100%);
+}
+.picture .pic:hover {
+  filter: none;
+}
+.pic {
+  align-self: center;
+  flex-basis: auto;
+}
+.pic img {
+  max-width: 140px;
+}
+
+/* 사진 배치 */
+.picture_top .pic:nth-of-type(5n + 1) > img {
+  top: 10%;
+  left: 25%;
+  transform: rotate(-15deg);
+}
+.picture_top .pic:nth-of-type(5n + 2) > img {
+  top: 10%;
+  left: 25%;
+  transform: rotate(5deg);
+}
+.picture_top .pic:nth-of-type(5n + 3) > img {
+  top: 10%;
+  left: 55%;
+  transform: rotate(-25deg);
+}
+.picture_top .pic:nth-of-type(5n + 4) > img {
   top: 10%;
   left: 20%;
-  transform: rotate(-50rad);
+  transform: rotate(15deg);
+}
+.picture_top .pic:nth-of-type(5n + 5) > img {
+  top: 10%;
+  left: -10%;
+  transform: rotate(-5deg);
+}
+.picture_bottom .pic:nth-of-type(5n + 1) > img {
+  margin-top: 20%;
+  left: 10%;
+  transform: rotate(10deg);
+}
+.picture_bottom .pic:nth-of-type(5n + 2) > img {
+  top: 0%;
+  left: -20%;
+  transform: rotate(-15deg);
+}
+.picture_bottom .pic:nth-of-type(5n + 3) > img {
+  margin-top: 20%;
+  left: -50%;
+  transform: rotate(5deg);
+}
+.picture_bottom .pic:nth-of-type(5n + 4) > img {
+  top: 10%;
+  left: -30%;
+  transform: rotate(-10deg);
+}
+.picture_bottom .pic:nth-of-type(5n + 5) > img {
+  top: 10%;
+  left: -30%;
+  transform: rotate(5deg);
 }
 
-#page_2 .section div {
-  position: absolute;
-  float: right;
-}
-
-#page_2 div #img2 {
-  position: absolute;
-  max-width: 100%;
+#road_img {
+  /* width: 80%; */
+  margin-top: 10%;
+  margin-left: 5px;
+  /* float: left; */
+  width: 100%;
   height: auto;
-  top: 40%;
-  left: 0%;
-  transform: rotate(50rad);
+}
+
+#road_title {
+  float: left;
+  margin-top: 3%;
+}
+#road_content_top {
+  width: 420px;
+  float: left;
+  font-family: "KotraHope";
+  font-size: 1.3rem;
+  margin-left: 2%;
+  margin-top: -3px;
+  margin-bottom: 10px;
+  transform: scale(0.9);
+  color: rgb(0, 42, 86);
+}
+#road_content_bottom {
+  width: 420px;
+  float: left;
+  font-family: "KotraHope";
+  font-size: 1.3rem;
+  margin-left: 2%;
+  margin-bottom: 10px;
+  margin-top: -20px;
+  transform: scale(0.9);
+  color: rgb(0, 42, 86);
+}
+
+.topic {
+  font-family: "KotraHope";
+  font-size: 2.95rem;
+  /* margin-left: 12%; */
+  /* margin-bottom: 10px; */
+  padding-right: 40px;
+  transform: scale(0.9);
+  color: rgb(167, 224, 255);
+  -webkit-text-stroke: 1px rgb(0, 42, 86);
+  display: inline-block;
+}
+span.highlight {
+  color: rgb(255, 238, 0);
+  animation: highlight 0.5s infinite;
+}
+span.keyword {
+  color: rgb(0, 94, 255);
+  animation: keyword 1s infinite;
+}
+
+@keyframes highlight {
+  0% {
+    color: rgb(255, 174, 0);
+  }
+  30% {
+    color: rgb(255, 238, 0);
+  }
+  70% {
+    color: rgb(255, 183, 0);
+  }
+  100% {
+    color: rgb(255, 238, 0);
+  }
+}
+
+@keyframes keyword {
+  25% {
+    color: rgb(128, 194, 255);
+  }
+  50% {
+    color: rgb(36, 149, 255);
+  }
+  75% {
+    color: rgb(0, 110, 255);
+  }
+  100% {
+    color: rgb(36, 149, 255);
+  }
+}
+
+/*설명 부분*/
+.title {
+  font-family: "SCoreDream";
+  font-size: 1.7rem;
+  font-weight: 700;
+  /* margin-top: 20px; */
+  /* margin-bottom: 10px; */
+}
+.description {
+  font-family: "SCoreDream";
+  font-size: 0.85rem;
+  font-weight: 300;
+  /* position: absolute; */
+
+  /* left: 51%; */
+  margin-top: 3%;
+  margin-left: 6px;
+  margin-right: 6px;
+  line-height: 1.5;
+  color: #000000;
+  /* width: 35%; */
+}
+span.bold {
+  font-weight: 500;
+}
+span.high_light {
+  font-weight: 400;
+  background-color: rgb(255, 255, 161);
+}
+.paragraph {
+  border-radius: 5px;
+  padding: 10px 15px;
+  background-color: rgb(217, 217, 217);
+}
+
+.key_img > img {
+  margin-left: 6%;
+  width: 90%;
+  float: left;
+  margin-top: 13%;
+  transform: rotate(-5deg);
+}
+
+/*6페이지*/
+/* .wrapper {
+  display: flex;
+  margin-top: 3%;
+  margin-left: 10%;
+} */
+#title {
+  font-family: "Montserrat";
+  font-size: 2.3rem;
+  margin-top: 6%;
+  margin-left: 9%;
+}
+#src {
+  font-family: "Montserrat";
+  font-size: 0.95rem;
+  margin-left: 7%;
+  margin-top: 5%;
+}
+#text {
+  font-family: "KotraHope";
+  font-size: 2.5rem;
+  margin-left: 0%;
+  width: 100%;
+  margin-bottom: 10px;
+  color: rgb(167, 224, 255);
+  -webkit-text-stroke: 1px rgb(0, 42, 86);
+  display: inline-block;
+  text-align: center;
+}
+
+#share {
+  margin-left: 0%;
+  /* padding-left: 5%; */
+}
+#btn_share {
+  text-align: center;
+  margin-top: 20%;
+}
+
+#diary {
+  top: 0%;
+  position: absolute;
+  left: 10%;
+  z-index: -10;
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+#img31,
+#img32,
+#img33,
+#img34,
+#img35 {
+  width: 80%;
+}
+#img31 {
+  transform: rotate(-15deg);
+}
+#img32 {
+  transform: rotate(5deg);
+}
+#img33 {
+  transform: rotate(-10deg);
+}
+#img34 {
+  transform: rotate(25deg);
+}
+#img35 {
+  transform: rotate(-5deg);
+}
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+#end {
+  width: 80%;
+  margin-left: 10%;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
 }
