@@ -5,73 +5,89 @@
 
 /* 폰트 설정*/
 :root {
-  --font-size-lg: 2rem;
-  --font-size-md: 1.5rem;
-  --font-size-sm: 1rem;
+  --font-size-vlg: 24px;
+  --font-size-lg: 20px;
+  --font-size-md: 10px;
+  --font-size-sm: 4px;
+  --font-size-vsm: 4px;
 }
-@media (min-width: 500px) {
+@media (min-width: 800px) {
   :root {
-    --font-size-lg: 1.3rem;
-    --font-size-md: 2rem;
-    --font-size-sm: 0.001rem;
+    --font-size-vlg: 28px;
+    --font-size-lg: 22px;
+    --font-size-md: 12.5px;
+    --font-size-sm: 7px;
+    --font-size-vsm: 4px;
   }
 }
-@media (min-width: 850px) {
+@media (min-width: 870px) {
   :root {
-    --font-size-lg: 1.5rem;
-    --font-size-md: 2rem;
-    --font-size-sm: 0.5rem;
+    --font-size-vlg: 30px;
+    --font-size-lg: 24px;
+    --font-size-md: 13px;
+    --font-size-sm: 10.5px;
+    --font-size-vsm: 7px;
   }
 }
-@media (min-width: 990px) {
+@media (min-width: 950px) {
   :root {
-    --font-size-lg: 1.8rem;
-    --font-size-md: 2rem;
-    --font-size-sm: 0.7rem;
+    --font-size-vlg: 33px;
+    --font-size-lg: 25px;
+    --font-size-md: 15px;
+    --font-size-sm: 11.5px;
+    --font-size-vsm: 7px;
   }
 }
-@media (min-width: 1110px) {
+@media (min-width: 1040px) {
   :root {
-    --font-size-lg: 2rem;
-    --font-size-md: 2rem;
-    --font-size-sm: 0.8rem;
+    --font-size-vlg: 38px;
+    --font-size-lg: 27px;
+    --font-size-md: 18px;
+    --font-size-sm: 13px;
+    --font-size-vsm: 11px;
   }
 }
-@media (min-width: 1194px) {
+@media (min-width: 1200px) {
   :root {
-    --font-size-lg: 2.15rem;
-    --font-size-md: 2rem;
-    --font-size-sm: 0.87rem;
+    --font-size-vlg: 45px;
+    --font-size-lg: 33px;
+    --font-size-md: 20px;
+    --font-size-sm: 14px;
+    --font-size-vsm: 12px;
   }
 }
-@media (min-width: 1290px) {
+@media (min-width: 1350px) {
   :root {
-    --font-size-lg: 2.35rem;
-    --font-size-md: 2rem;
-    --font-size-sm: 0.95rem;
-  }
-}
-@media (min-width: 1380px) {
-  :root {
-    --font-size-lg: 2.55rem;
-    --font-size-md: 2rem;
-    --font-size-sm: 1rem;
+    --font-size-vlg: 52px;
+    --font-size-lg: 39px;
+    --font-size-md: 22px;
+    --font-size-sm: 15px;
+    --font-size-vsm: 14px;
   }
 }
 @media (min-width: 1500px) {
   :root {
-    --font-size-lg: 2.8rem;
-    --font-size-md: 2rem;
-    --font-size-sm: 1.1rem;
+    --font-size-vlg: 58px;
+    --font-size-lg: 41px;
+    --font-size-md: 25px;
+    --font-size-sm: 17px;
+    --font-size-vsm: 16px;
   }
 }
 
 @media (min-width: 1620px) {
   :root {
-    --font-size-lg: 3rem;
-    --font-size-md: 2.2rem;
-    --font-size-sm: 1.2rem;
+    --font-size-vlg: 62px;
+    --font-size-lg: 46px;
+    --font-size-md: 30px;
+    --font-size-sm: 19px;
+    --font-size-vsm: 18px;
   }
+}
+
+html {
+  /* 최소 창 크기 */
+  min-width: 800px;
 }
 
 html,
@@ -144,12 +160,13 @@ body {
 }
 
 .pg_num {
+  font-size: var(--font-size-vsm);
   position: absolute;
   bottom: 7px;
   left: 50%;
 }
 
-.highlight_textbox span {
+/* .highlight_textbox span {
   position: relative;
   display: inline-block;
   animation: bounce 0.5s ease infinite alternate;
@@ -162,7 +179,7 @@ body {
     0 3px 0 rgba(0, 80, 20, 0.762), 0 4px 0 rgba(0, 80, 20, 0.762),
     0 5px 0 rgba(0, 80, 20, 0.762), 0 6px 0 transparent, 0 7px 0 transparent,
     0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 80, 20, 0.762);
-}
+} */
 
 .highlight_textbox span:nth-child(2) {
   animation-delay: 0.1s;
@@ -330,36 +347,38 @@ body {
 
 #road_title {
   float: left;
-  margin-top: 3%;
+  font-size: var(--font-size-vlg);
+  margin-top: 5%;
+  margin-left: 15%;
 }
 #road_content_top {
-  width: 90%;
+  /* width: 90%; */
   float: left;
   font-family: "SCoreDream";
-  font-size: 0.95rem;
+  font-size: var(--font-size-sm);
   font-weight: 400;
   margin-left: 2%;
-  margin-top: -3px;
+  margin-top: 3%;
   margin-bottom: 10px;
   transform: scale(0.9);
   color: rgb(0, 42, 86);
 }
 #road_content_bottom {
-  width: 90%;
+  /* width: 90%; */
   float: left;
   font-family: "SCoreDream";
-  font-size: 0.95rem;
+  font-size: var(--font-size-sm);
   font-weight: 400;
   margin-left: 2%;
   margin-bottom: 10px;
-  margin-top: -20px;
+  /* margin-top: -20px; */
   transform: scale(0.9);
   color: rgb(0, 42, 86);
 }
 
 .topic {
   font-family: "EnjoyStories";
-  font-size: 2.95rem;
+  font-size: var(--font-size-vlg);
   font-weight: 700;
   /* margin-left: 12%; */
   /* margin-bottom: 10px; */
@@ -434,7 +453,7 @@ span.keyword {
   color: #000000;
   /* width: 35%; */
 }
-.description_text{
+.description_text {
   margin-top: 3%;
   font-size: var(--font-size-sm);
 }
@@ -447,7 +466,7 @@ span.high_light {
 }
 .paragraph {
   border-radius: 5px;
-  padding: 10px;
+  padding: 2%;
   margin-top: 0;
   margin-bottom: 0;
   /* background-color: rgb(217, 217, 217); */
@@ -462,29 +481,28 @@ span.high_light {
 }
 
 /*출처 부분*/
-/* .wrapper {
-  display: flex;
-  margin-top: 3%;
-  margin-left: 10%;
-} */
-#title {
-  font-family: "Montserrat";
+.src_title {
+  font-family: "EnjoyStories";
+  font-weight: 700;
   font-size: var(--font-size-lg);
   margin-top: 6%;
   margin-left: 9%;
 }
-#src {
+.src_content {
   font-family: "Montserrat";
-  font-size: var(--font-size-sm);
-  margin-left: 7%;
+  font-size: var(--font-size-vsm);
+  margin-left: 3%;
   margin-top: 5%;
+  width: 80%;
 }
-#text {
+#share_text {
   font-family: "EnjoyStories";
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-vlg);
+  font-weight: 700;
   margin-left: 0%;
   width: 100%;
-  margin-bottom: 10px;
+  margin-top: 10%;
+  margin-bottom: 5%;
   color: rgb(0, 50, 76);
   /* -webkit-text-stroke: 1px rgb(0, 42, 86); */
   display: inline-block;
@@ -497,7 +515,7 @@ span.high_light {
 }
 #btn_share {
   text-align: center;
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
 #flipbook {
@@ -563,10 +581,16 @@ span.high_light {
   }
 }
 
-/* #text_end {
-  font-family: "EnjoyStories";
-  font-size: 1.6rem;
-} */
+#text_end > .description_text {
+  /* font-family: "EnjoyStories"; */
+  font-size: var(--font-size-sm);
+  border-radius: 5px;
+  padding: 2%;
+  margin: 1%;
+  margin-top: 5%;
+  margin-bottom: 0;
+  /* background-color: rgb(210, 233, 224); */
+}
 
 /* .page-wrapper div {
   width: 100%;
