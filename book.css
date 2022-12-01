@@ -24,7 +24,7 @@
 @media (min-width: 870px) {
   :root {
     --font-size-vlg: 30px;
-    --font-size-lg: 24.5px;
+    --font-size-lg: 24px;
     --font-size-md: 13px;
     --font-size-sm: 10.5px;
     --font-size-vsm: 7px;
@@ -33,7 +33,7 @@
 @media (min-width: 950px) {
   :root {
     --font-size-vlg: 33px;
-    --font-size-lg: 26px;
+    --font-size-lg: 25px;
     --font-size-md: 15px;
     --font-size-sm: 11.5px;
     --font-size-vsm: 7px;
@@ -42,7 +42,7 @@
 @media (min-width: 1040px) {
   :root {
     --font-size-vlg: 38px;
-    --font-size-lg: 28px;
+    --font-size-lg: 27px;
     --font-size-md: 18px;
     --font-size-sm: 13px;
     --font-size-vsm: 11px;
@@ -51,27 +51,27 @@
 @media (min-width: 1200px) {
   :root {
     --font-size-vlg: 45px;
-    --font-size-lg: 34px;
+    --font-size-lg: 33px;
     --font-size-md: 20px;
-    --font-size-sm: 14.5px;
+    --font-size-sm: 14px;
     --font-size-vsm: 12px;
   }
 }
 @media (min-width: 1350px) {
   :root {
     --font-size-vlg: 52px;
-    --font-size-lg: 40px;
+    --font-size-lg: 39px;
     --font-size-md: 22px;
-    --font-size-sm: 16px;
+    --font-size-sm: 15px;
     --font-size-vsm: 14px;
   }
 }
 @media (min-width: 1500px) {
   :root {
     --font-size-vlg: 58px;
-    --font-size-lg: 43px;
+    --font-size-lg: 41px;
     --font-size-md: 25px;
-    --font-size-sm: 18px;
+    --font-size-sm: 17px;
     --font-size-vsm: 16px;
   }
 }
@@ -79,9 +79,9 @@
 @media (min-width: 1620px) {
   :root {
     --font-size-vlg: 62px;
-    --font-size-lg: 48px;
+    --font-size-lg: 46px;
     --font-size-md: 30px;
-    --font-size-sm: 20px;
+    --font-size-sm: 19px;
     --font-size-vsm: 18px;
   }
 }
@@ -575,7 +575,7 @@ span.high_light {
   margin: 1%;
   margin-top: 5%;
   margin-bottom: 0;
-  background-color: rgb(210, 233, 224);
+  /* background-color: rgb(210, 233, 224); */
 
 /* .page-wrapper div {
   width: 100%;
