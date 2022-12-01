@@ -134,6 +134,7 @@
 html {
   /* 최소 창 크기 */
   /* min-width: 800px; */
+  overflow-y: scroll;
 }
 
 html,
