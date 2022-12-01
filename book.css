@@ -2,8 +2,15 @@
 @import url("https://webfontworld.github.io/score/SCoreDream.css");
 @import url("https://webfontworld.github.io/tvn/EnjoyStories.css");
 
+.section {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
 /* 폰트 설정*/
 :root {
+  --font-size-tlg: 28px;
   --font-size-vlg: 24px;
   --font-size-lg: 20px;
   --font-size-slg: 15px;
@@ -16,6 +23,7 @@
 }
 @media (min-width: 800px) {
   :root {
+    --font-size-tlg: 28px;
     --font-size-vlg: 26px;
     --font-size-lg: 20px;
     --font-size-slg: 16.5px;
@@ -29,6 +37,7 @@
 }
 @media (min-width: 870px) {
   :root {
+    --font-size-tlg: 32px;
     --font-size-vlg: 29px;
     --font-size-lg: 23px;
     --font-size-slg: 18px;
@@ -42,6 +51,7 @@
 }
 @media (min-width: 950px) {
   :root {
+    --font-size-tlg: 41px;
     --font-size-vlg: 32px;
     --font-size-lg: 24px;
     --font-size-slg: 19px;
@@ -55,6 +65,7 @@
 }
 @media (min-width: 1040px) {
   :root {
+    --font-size-tlg: 47px;
     --font-size-vlg: 37px;
     --font-size-lg: 27px;
     --font-size-slg: 23px;
@@ -68,6 +79,7 @@
 }
 @media (min-width: 1200px) {
   :root {
+    --font-size-tlg: 55px;
     --font-size-vlg: 44px;
     --font-size-lg: 33px;
     --font-size-slg: 28px;
@@ -81,6 +93,7 @@
 }
 @media (min-width: 1350px) {
   :root {
+    --font-size-tlg: 66px;
     --font-size-vlg: 51px;
     --font-size-lg: 39px;
     --font-size-slg: 34px;
@@ -100,6 +113,7 @@
 }
 @media (min-width: 1500px) {
   :root {
+    --font-size-tlg: 70px;
     --font-size-vlg: 56.5px;
     --font-size-lg: 41.5px;
     --font-size-slg: 36.5px;
@@ -114,6 +128,7 @@
 
 @media (min-width: 1620px) {
   :root {
+    --font-size-tlg: 73px;
     --font-size-vlg: 60px;
     --font-size-lg: 46px;
     --font-size-slg: 41px;
@@ -128,6 +143,7 @@
 
 @media (min-width: 1770px) {
   :root {
+    --font-size-tlg: 75px;
     --font-size-vlg: 62px;
     --font-size-lg: 50px;
     --font-size-slg: 45px;
@@ -696,3 +712,29 @@ span.high_light {
   width: 100%;
   height: 100%;
 } */
+
+.title_members {
+  position: absolute;
+  z-index: 10;
+  font-family: "EnjoyStories";
+  font-size: var(--font-size-tlg);
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  /* margin-top: 20px; */
+  /* margin-bottom: 10px; */
+  margin-top: -4%;
+  margin-left: 5%;
+  -webkit-text-stroke: 1px rgb(57, 72, 67);
+  text-shadow: 0 1px 0 rgba(64, 64, 64, 0.762), 0 2px 0 rgba(64, 64, 64, 0.762),
+    0 3px 0 rgba(64, 64, 64, 0.762), 0 4px 0 rgba(64, 64, 64, 0.762),
+    0 5px 0 rgba(64, 64, 64, 0.762), 0 6px 0 transparent, 0 7px 0 transparent,
+    0 8px 0 transparent, 0 9px 0 transparent,
+    0 10px 10px rgba(64, 64, 64, 0.762);
+}
+#member_img {
+  position: relative;
+  width: 70%;
+  margin-top: 30%;
+  margin-left: 20%;
+  padding: 0;
+}
