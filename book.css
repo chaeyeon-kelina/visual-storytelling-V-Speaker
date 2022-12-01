@@ -3,6 +3,77 @@
 @import url("https://webfontworld.github.io/score/SCoreDream.css");
 @import url("https://webfontworld.github.io/tvn/EnjoyStories.css");
 
+/* 폰트 설정*/
+:root {
+  --font-size-lg: 2rem;
+  --font-size-md: 1.5rem;
+  --font-size-sm: 1rem;
+}
+@media (min-width: 500px) {
+  :root {
+    --font-size-lg: 1.3rem;
+    --font-size-md: 2rem;
+    --font-size-sm: 0.001rem;
+  }
+}
+@media (min-width: 850px) {
+  :root {
+    --font-size-lg: 1.5rem;
+    --font-size-md: 2rem;
+    --font-size-sm: 0.5rem;
+  }
+}
+@media (min-width: 990px) {
+  :root {
+    --font-size-lg: 1.8rem;
+    --font-size-md: 2rem;
+    --font-size-sm: 0.7rem;
+  }
+}
+@media (min-width: 1110px) {
+  :root {
+    --font-size-lg: 2rem;
+    --font-size-md: 2rem;
+    --font-size-sm: 0.8rem;
+  }
+}
+@media (min-width: 1194px) {
+  :root {
+    --font-size-lg: 2.15rem;
+    --font-size-md: 2rem;
+    --font-size-sm: 0.87rem;
+  }
+}
+@media (min-width: 1290px) {
+  :root {
+    --font-size-lg: 2.35rem;
+    --font-size-md: 2rem;
+    --font-size-sm: 0.95rem;
+  }
+}
+@media (min-width: 1380px) {
+  :root {
+    --font-size-lg: 2.55rem;
+    --font-size-md: 2rem;
+    --font-size-sm: 1rem;
+  }
+}
+@media (min-width: 1500px) {
+  :root {
+    --font-size-lg: 2.8rem;
+    --font-size-md: 2rem;
+    --font-size-sm: 1.1rem;
+  }
+}
+
+@media (min-width: 1620px) {
+  :root {
+    --font-size-lg: 3rem;
+    --font-size-md: 2.2rem;
+    --font-size-sm: 1.2rem;
+  }
+}
+
 html,
 body {
   /* height: 100vh; */
@@ -323,18 +394,19 @@ span.keyword {
 /*설명 부분*/
 .title {
   font-family: "EnjoyStories";
-  font-size: 1.95rem;
+  font-size: var(--font-size-lg);
   font-weight: 700;
   color: rgb(72, 72, 72);
   /* margin-top: 20px; */
   /* margin-bottom: 10px; */
+  margin-top: 3%;
+  margin-left: 5%;
 }
 .title_span {
   color: rgb(144, 180, 167);
 }
 .description {
   font-family: "SCoreDream";
-  font-size: 0.85rem;
   font-weight: 400;
   /* position: absolute; */
 
@@ -346,6 +418,10 @@ span.keyword {
   color: #000000;
   /* width: 35%; */
 }
+.description_text{
+  margin-top: 3%;
+  font-size: var(--font-size-sm);
+}
 span.bold {
   font-weight: 600;
 }
@@ -355,7 +431,9 @@ span.high_light {
 }
 .paragraph {
   border-radius: 5px;
-  padding: 10px 15px;
+  padding: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
   /* background-color: rgb(217, 217, 217); */
 }
 
@@ -367,7 +445,7 @@ span.high_light {
   transform: rotate(-5deg);
 }
 
-/*6페이지*/
+/*출처 부분*/
 /* .wrapper {
   display: flex;
   margin-top: 3%;
@@ -375,19 +453,19 @@ span.high_light {
 } */
 #title {
   font-family: "Montserrat";
-  font-size: 2.3rem;
+  font-size: var(--font-size-lg);
   margin-top: 6%;
   margin-left: 9%;
 }
 #src {
   font-family: "Montserrat";
-  font-size: 0.95rem;
+  font-size: var(--font-size-sm);
   margin-left: 7%;
   margin-top: 5%;
 }
 #text {
   font-family: "EnjoyStories";
-  font-size: 2.5rem;
+  font-size: var(--font-size-md);
   margin-left: 0%;
   width: 100%;
   margin-bottom: 10px;
