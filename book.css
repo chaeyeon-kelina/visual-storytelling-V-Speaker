@@ -2,11 +2,11 @@
 @import url("https://webfontworld.github.io/score/SCoreDream.css");
 @import url("https://webfontworld.github.io/tvn/EnjoyStories.css");
 
-.section {
+/* .section {
   width: 100vw;
   height: 100vh;
   position: relative;
-}
+} */
 
 /* 폰트 설정*/
 :root {
@@ -155,10 +155,9 @@
     --max-icon: 100px;
   }
 }
-
 html {
   /* 최소 창 크기 */
-  /* min-width: 800px; */
+  min-width: 800px;
 }
 
 html,
@@ -168,11 +167,8 @@ body {
   padding: 0px;
   display: block;
   /* max-width: 100%; */
-  min-width: 800px;
-  /* overflow-y: scroll; */
   height: 100vh;
   /* overflow: hidden; */
-  /* overflow-x: hidden; */
   box-sizing: border-box;
 }
 
