@@ -194,6 +194,22 @@ body {
   height: 100%;
 }
 
+.hover-text{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 20%;
+}
+
+.next{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 0%;
+  float: right;
+  margin-right: 10px;
+}
+
 .picture_top_left {
   display: flex;
   flex-wrap: nowrap;
@@ -476,7 +492,7 @@ span.high_light {
 }
 
 #share {
-  margin-left: 0%;
+  text-align: center;
   /* padding-left: 5%; */
 }
 #btn_share {
