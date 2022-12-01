@@ -11,7 +11,7 @@
   --font-size-sm: 4px;
   --font-size-vsm: 4px;
 
-  --max-width:95px;
+  --max-width: 95px;
   --max-icon: 40px;
 }
 @media (min-width: 800px) {
@@ -22,7 +22,7 @@
     --font-size-sm: 6px;
     --font-size-vsm: 3px;
 
-    --max-width:90px;
+    --max-width: 90px;
     --max-icon: 45px;
   }
 }
@@ -34,7 +34,7 @@
     --font-size-sm: 9px;
     --font-size-vsm: 6px;
 
-    --max-width:110px;
+    --max-width: 110px;
     --max-icon: 50px;
   }
 }
@@ -46,7 +46,7 @@
     --font-size-sm: 10px;
     --font-size-vsm: 7px;
 
-    --max-width:120px;
+    --max-width: 120px;
     --max-icon: 55px;
   }
 }
@@ -58,7 +58,7 @@
     --font-size-sm: 12px;
     --font-size-vsm: 10px;
 
-    --max-width:135px;
+    --max-width: 135px;
     --max-icon: 65px;
   }
 }
@@ -70,7 +70,7 @@
     --font-size-sm: 13.5px;
     --font-size-vsm: 11px;
 
-    --max-width:150px;
+    --max-width: 150px;
     --max-icon: 70px;
   }
 }
@@ -82,13 +82,13 @@
     --font-size-sm: 15px;
     --font-size-vsm: 13px;
 
-    --max-width:165px;
+    --max-width: 165px;
     --max-icon: 75px;
   }
 }
 @media (min-width: 1450px) {
   :root {
-    --max-width:177px;
+    --max-width: 177px;
     --max-icon: 80px;
   }
 }
@@ -100,7 +100,7 @@
     --font-size-sm: 16.5px;
     --font-size-vsm: 14.5px;
 
-    --max-width:185px;
+    --max-width: 185px;
     --max-icon: 85px;
   }
 }
@@ -113,7 +113,7 @@
     --font-size-sm: 18px;
     --font-size-vsm: 16px;
 
-    --max-width:200px;
+    --max-width: 200px;
     --max-icon: 90px;
   }
 }
@@ -126,11 +126,10 @@
     --font-size-sm: 20px;
     --font-size-vsm: 18px;
 
-    --max-width:220px;
+    --max-width: 220px;
     --max-icon: 100px;
   }
 }
-
 
 html {
   /* 최소 창 크기 */
@@ -143,7 +142,8 @@ body {
   margin: 0px;
   padding: 0px;
   display: block;
-  max-width: 100%;
+  /* max-width: 100%; */
+  /* min-width: 800px; */
   height: 100vh;
   /* overflow: hidden; */
   box-sizing: border-box;
@@ -258,14 +258,14 @@ body {
   height: 100%;
 }
 
-.hover-text{
+.hover-text {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   margin-top: 20%;
 }
 
-.next{
+.next {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -565,7 +565,7 @@ span.high_light {
   margin-top: 15%;
 }
 
-.icon{
+.icon {
   max-width: var(--max-icon);
 }
 
