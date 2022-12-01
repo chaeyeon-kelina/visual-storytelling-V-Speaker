@@ -11,3 +11,10 @@ body {
   margin-top: 5%;
   animation: fadeInUp 2s;
 }
+
+#member_img{
+  display: block;
+  margin: 0 auto; 
+  width: 80vw;
+  padding-bottom: 5%;
+}

@@ -27,7 +27,7 @@ body {
   animation: bounce 0.5s ease infinite alternate;
   font-family: "KotraHope";
   font-size: 2rem;
-  font-weight: 200;
+  font-weight: 100;
   -webkit-text-stroke: 1px rgba(0, 80, 20, 0.762);
   color: rgb(182, 218, 131);
   text-shadow: 0 1px 0 rgba(0, 80, 20, 0.762), 0 2px 0 rgba(0, 80, 20, 0.762),
@@ -66,7 +66,10 @@ body {
   position: relative;
 }
 
-
+#section1{
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
 
 * {
   box-sizing: border-box;
@@ -309,9 +312,16 @@ span.keyword {
 #img32,
 #img33,
 #img34,
-#img35 {
+#img35{
   width: 80%;
 }
+
+#member_img{
+  display: block;
+  margin: 0 auto; 
+  width: 80vw;
+}
+
 #img31 {
   transform: rotate(-15deg);
 }
