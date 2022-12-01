@@ -147,7 +147,12 @@ body {
   /* overflow-y: scroll; */
   height: 100vh;
   /* overflow: hidden; */
+  /* overflow-x: hidden; */
   box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -155,10 +160,11 @@ body {
   display: flex;
   height: 100%;
   justify-content: center;
-  margin: 5%;
+  /* padding: 3%; */
+  /* padding-top: 5%; */
   width: 100%;
   box-sizing: border-box;
-  margin-left: 2%;
+  /* margin-left: 2%; */
 }
 
 .aspect {
@@ -174,6 +180,8 @@ body {
   right: 0;
   /* top: 0; */
   top: -20px;
+  padding-top: 5%;
+  padding-left: 2%;
 }
 
 .flipbook {
