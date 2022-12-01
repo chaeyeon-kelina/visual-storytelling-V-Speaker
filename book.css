@@ -168,7 +168,8 @@ body {
 }
 
 .aspect {
-  padding-bottom: 37%;
+  /* padding-bottom: 37%; */
+  padding-bottom: 50%;
   position: relative;
   width: 100%;
 }
