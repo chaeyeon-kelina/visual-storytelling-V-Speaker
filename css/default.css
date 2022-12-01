@@ -4,3 +4,10 @@ body {
   background-size: cover;
   max-height: 100vh;
 }
+
+#cover_first {
+  width: 90%;
+  margin-left: 0%;
+  margin-top: 5%;
+  animation: fadeInUp 2s;
+}
