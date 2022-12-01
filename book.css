@@ -1,4 +1,3 @@
-@import url("https://webfontworld.github.io/kotra/KotraHope.css");
 @import url("https://webfontworld.github.io/Montserrat/Montserrat.css");
 @import url("https://webfontworld.github.io/score/SCoreDream.css");
 @import url("https://webfontworld.github.io/tvn/EnjoyStories.css");
@@ -7,6 +6,7 @@
 :root {
   --font-size-vlg: 24px;
   --font-size-lg: 20px;
+  --font-size-slg: 15px;
   --font-size-md: 10px;
   --font-size-sm: 4px;
   --font-size-vsm: 4px;
@@ -18,7 +18,8 @@
   :root {
     --font-size-vlg: 26px;
     --font-size-lg: 20px;
-    --font-size-md: 11.2px;
+    --font-size-slg: 16.5px;
+    --font-size-md: 11.5px;
     --font-size-sm: 6px;
     --font-size-vsm: 3px;
 
@@ -30,7 +31,8 @@
   :root {
     --font-size-vlg: 29px;
     --font-size-lg: 23px;
-    --font-size-md: 12px;
+    --font-size-slg: 18px;
+    --font-size-md: 13px;
     --font-size-sm: 9px;
     --font-size-vsm: 6px;
 
@@ -42,7 +44,8 @@
   :root {
     --font-size-vlg: 32px;
     --font-size-lg: 24px;
-    --font-size-md: 13px;
+    --font-size-slg: 19px;
+    --font-size-md: 14px;
     --font-size-sm: 10px;
     --font-size-vsm: 7px;
 
@@ -54,6 +57,7 @@
   :root {
     --font-size-vlg: 37px;
     --font-size-lg: 27px;
+    --font-size-slg: 23px;
     --font-size-md: 17px;
     --font-size-sm: 12px;
     --font-size-vsm: 10px;
@@ -66,7 +70,8 @@
   :root {
     --font-size-vlg: 44px;
     --font-size-lg: 33px;
-    --font-size-md: 19px;
+    --font-size-slg: 28px;
+    --font-size-md: 18px;
     --font-size-sm: 13.5px;
     --font-size-vsm: 11px;
 
@@ -78,7 +83,8 @@
   :root {
     --font-size-vlg: 51px;
     --font-size-lg: 39px;
-    --font-size-md: 21px;
+    --font-size-slg: 34px;
+    --font-size-md: 24px;
     --font-size-sm: 15px;
     --font-size-vsm: 13px;
 
@@ -96,7 +102,8 @@
   :root {
     --font-size-vlg: 56.5px;
     --font-size-lg: 41.5px;
-    --font-size-md: 23.5px;
+    --font-size-slg: 36.5px;
+    --font-size-md: 26.5px;
     --font-size-sm: 16.5px;
     --font-size-vsm: 14.5px;
 
@@ -109,7 +116,8 @@
   :root {
     --font-size-vlg: 60px;
     --font-size-lg: 46px;
-    --font-size-md: 28px;
+    --font-size-slg: 41px;
+    --font-size-md: 31px;
     --font-size-sm: 18px;
     --font-size-vsm: 16px;
 
@@ -122,7 +130,8 @@
   :root {
     --font-size-vlg: 62px;
     --font-size-lg: 50px;
-    --font-size-md: 33px;
+    --font-size-slg: 45px;
+    --font-size-md: 35px;
     --font-size-sm: 20px;
     --font-size-vsm: 18px;
 
@@ -418,7 +427,7 @@ body {
   margin-top: 3%;
   margin-bottom: 10px;
   transform: scale(0.9);
-  color: rgb(0, 42, 86);
+  color: rgb(14, 14, 14);
 }
 #road_content_bottom {
   /* width: 90%; */
@@ -431,6 +440,7 @@ body {
   /* margin-top: -20px; */
   transform: scale(0.9);
   color: rgb(0, 42, 86);
+  color: rgb(14, 14, 14);
 }
 
 .topic {
@@ -452,6 +462,10 @@ span.highlight {
 span.keyword {
   color: rgb(0, 22, 60);
   animation: keyword 1s infinite;
+}
+span.highlight_2 {
+  font-weight: 500;
+  background-color: rgb(227, 240, 236);
 }
 
 /* @keyframes highlight {
@@ -510,6 +524,7 @@ span.keyword {
   color: #000000;
   /* width: 35%; */
 }
+
 .description_text {
   margin-top: 3%;
   font-size: var(--font-size-sm);
@@ -641,18 +656,42 @@ span.high_light {
     transform: translateZ(0);
   }
 }
+#title_end {
+  font-family: "EnjoyStories";
+  font-size: var(--font-size-slg);
+  font-weight: 700;
+  color: rgb(72, 72, 72);
+  /* margin-top: 20px; */
+  /* margin-bottom: 10px; */
+  margin-top: 3%;
+  margin-left: 5%;
+}
 
 #text_end > .description_text {
-  /* font-family: "EnjoyStories"; */
+  font-family: "SCoreDream";
   font-size: var(--font-size-sm);
   border-radius: 5px;
   padding: 2%;
   margin: 1%;
   margin-top: 5%;
   margin-bottom: 0;
+  line-height: 1.5;
   /* background-color: rgb(210, 233, 224); */
 }
+.large {
+  font-family: "EnjoyStories";
+  font-size: var(--font-size-slg);
+  font-weight: 700;
+}
 
+#ending {
+  border-radius: 5px;
+  padding: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color: rgb(227, 240, 236);
+  line-height: 2;
+}
 /* .page-wrapper div {
   width: 100%;
   height: 100%;
