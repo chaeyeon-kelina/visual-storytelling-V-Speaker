@@ -20,7 +20,7 @@
   --font-size-vvsm: 3px;
 
   --max-width: 95px;
-  --max-icon: 40px;
+  --max-icon: 20px;
 }
 @media (min-width: 800px) {
   :root {
@@ -34,7 +34,7 @@
     --font-size-vvsm: 2px;
 
     --max-width: 90px;
-    --max-icon: 45px;
+    --max-icon: 25px;
   }
 }
 @media (min-width: 870px) {
@@ -49,7 +49,7 @@
     --font-size-vvsm: 3px;
 
     --max-width: 110px;
-    --max-icon: 50px;
+    --max-icon: 25px;
   }
 }
 @media (min-width: 950px) {
@@ -64,7 +64,7 @@
     --font-size-vvsm: 3px;
 
     --max-width: 120px;
-    --max-icon: 55px;
+    --max-icon: 25px;
   }
 }
 @media (min-width: 1040px) {
@@ -79,7 +79,7 @@
     --font-size-vvsm: 8px;
 
     --max-width: 135px;
-    --max-icon: 65px;
+    --max-icon: 35px;
   }
 }
 @media (min-width: 1200px) {
@@ -94,7 +94,7 @@
     --font-size-vvsm: 8px;
 
     --max-width: 150px;
-    --max-icon: 70px;
+    --max-icon: 40px;
   }
 }
 @media (min-width: 1350px) {
@@ -109,13 +109,13 @@
     --font-size-vvsm: 10px;
 
     --max-width: 165px;
-    --max-icon: 75px;
+    --max-icon: 45px;
   }
 }
 @media (min-width: 1450px) {
   :root {
     --max-width: 177px;
-    --max-icon: 80px;
+    --max-icon: 40px;
   }
 }
 @media (min-width: 1500px) {
@@ -130,7 +130,7 @@
     --font-size-vvsm: 12.5px;
 
     --max-width: 185px;
-    --max-icon: 85px;
+    --max-icon: 55px;
   }
 }
 
@@ -146,7 +146,7 @@
     --font-size-vvsm: 14px;
 
     --max-width: 200px;
-    --max-icon: 90px;
+    --max-icon: 50px;
   }
 }
 
@@ -162,7 +162,7 @@
     --font-size-vvsm: 16px;
 
     --max-width: 220px;
-    --max-icon: 100px;
+    --max-icon: 60px;
   }
 }
 html {
@@ -192,7 +192,7 @@ body {
   height: 100%;
   justify-content: center;
   /* padding: 3%; */
-  /* padding-top: 5%; */
+  padding-top: 3%;
   width: 100%;
   box-sizing: border-box;
   /* margin-left: 2%; */
@@ -304,7 +304,7 @@ body {
   display: flex;
   flex-wrap: nowrap;
   justify-content: left;
-  /* margin-top: 20%; */
+  /* margin-top: 2vh; */
 }
 
 .next {
@@ -614,15 +614,22 @@ span.high_light {
 
 #share {
   text-align: center;
-  /* padding-left: 5%; */
+  padding-top: 15%;
 }
 #btn_share {
-  text-align: center;
-  margin-top: 15%;
+  /* width: 100%; */
+  /* text-align: center; */
+  justify-content: space-evenly;
+  margin-top: 10%;
+  /* margin: 1%; */
+  display: inline-block;
+  /* margin: auto; */
 }
 
 .icon {
+  display: inline-block;
   max-width: var(--max-icon);
+  
 }
 
 #flipbook {
