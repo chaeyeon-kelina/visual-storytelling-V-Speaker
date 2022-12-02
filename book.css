@@ -201,7 +201,7 @@ body {
   position: absolute;
   right: 0;
   /* top: 0; */
-  top: -20px;
+  top: 22px;
   padding-top: 5%;
   padding-left: 2%;
 }
@@ -718,7 +718,7 @@ span.high_light {
   color: rgb(255, 255, 255);
   /* margin-top: 20px; */
   /* margin-bottom: 10px; */
-  margin-top: -4%;
+  margin-top: 2%;
   margin-left: 5%;
   -webkit-text-stroke: 1px rgb(57, 72, 67);
   text-shadow: 0 1px 0 rgba(64, 64, 64, 0.762), 0 2px 0 rgba(64, 64, 64, 0.762),
@@ -730,7 +730,9 @@ span.high_light {
 #member_img {
   position: relative;
   width: 70%;
-  margin-top: 30%;
-  margin-left: 20%;
-  padding: 0;
+  /* margin-top: 30%; */
+  /* margin-left: 20%; */
+  padding-top: 5%;
+  padding-bottom: 5%;
+  /* padding: 0; */
 }
