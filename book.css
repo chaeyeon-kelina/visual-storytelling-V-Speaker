@@ -314,7 +314,7 @@ body {
   display: flex;
   flex-wrap: nowrap;
   justify-content: left;
-  /* margin-top: 2vh; */
+  margin-left: 2vh;
 }
 
 .next {
