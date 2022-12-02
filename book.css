@@ -151,11 +151,15 @@
     --font-size-vsm: 16px;
     --font-size-vvsm: 14px;
 
-    --max-width: 190px;
+    --max-width: 195px;
     --max-icon: 90px;
   }
 }
-
+@media (min-width: 1700px) {
+  :root {
+    --max-width: 210px;
+  }
+}
 @media (min-width: 1770px) {
   :root {
     --font-size-tlg: 75px;
@@ -167,7 +171,7 @@
     --font-size-vsm: 18px;
     --font-size-vvsm: 16px;
 
-    --max-width: 210px;
+    --max-width: 220px;
     --max-icon: 100px;
   }
 }
