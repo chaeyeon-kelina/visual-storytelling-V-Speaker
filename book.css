@@ -301,9 +301,9 @@ body {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  margin-top: 0%;
+  margin-top: -5%;
   float: right;
-  margin-right: 10px;
+  margin-right: 2%;
 }
 
 .picture_top_left {
@@ -514,6 +514,11 @@ span.highlight_2 {
 } */
 
 /*설명 부분*/
+.hover-info{
+  font-size: var(--font-size-vsm);
+  margin-top: 3vh;
+  color: rgb(47, 0, 255);
+}
 .title {
   font-family: "EnjoyStories";
   font-size: var(--font-size-lg);
