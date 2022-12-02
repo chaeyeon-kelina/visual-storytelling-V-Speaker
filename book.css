@@ -740,7 +740,7 @@ span.high_light {
   padding: 2%;
   margin-top: 1%;
   margin-bottom: 1%;
-  background-color: rgb(227, 240`, 236);
+  background-color: rgb(227, 240, 236);
   line-height: 2;
 }
 /* .page-wrapper div {
@@ -770,9 +770,16 @@ span.high_light {
 #member_img {
   position: relative;
   width: 70%;
-  margin-top: 30%; 
-  margin-left: 20%;
-  padding: 0;
-  /* padding-top: 5%;
-  padding-bottom: 5%; */
+  /* margin-top: 10%;  */
+  /* margin-left: 10%; */
+  flex: center;
+  padding-bottom: 5%;
+  /* padding: 0; */
+  /* padding-top: 5%; */
+  /* padding-bottom: 5%; */
+}
+
+#section2{
+  /* margin-top: -20%; */
+  margin-bottom: 90%;
 }
