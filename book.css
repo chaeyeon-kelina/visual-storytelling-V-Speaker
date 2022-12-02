@@ -17,6 +17,7 @@
   --font-size-md: 10px;
   --font-size-sm: 4px;
   --font-size-vsm: 4px;
+  --font-size-vvsm: 3px;
 
   --max-width: 95px;
   --max-icon: 40px;
@@ -30,6 +31,7 @@
     --font-size-md: 11.5px;
     --font-size-sm: 6px;
     --font-size-vsm: 3px;
+    --font-size-vvsm: 2px;
 
     --max-width: 90px;
     --max-icon: 45px;
@@ -44,6 +46,7 @@
     --font-size-md: 13px;
     --font-size-sm: 9px;
     --font-size-vsm: 6px;
+    --font-size-vvsm: 3px;
 
     --max-width: 110px;
     --max-icon: 50px;
@@ -58,6 +61,7 @@
     --font-size-md: 14px;
     --font-size-sm: 10px;
     --font-size-vsm: 7px;
+    --font-size-vvsm: 3px;
 
     --max-width: 120px;
     --max-icon: 55px;
@@ -72,6 +76,7 @@
     --font-size-md: 17px;
     --font-size-sm: 12px;
     --font-size-vsm: 10px;
+    --font-size-vvsm: 8px;
 
     --max-width: 135px;
     --max-icon: 65px;
@@ -86,6 +91,7 @@
     --font-size-md: 18px;
     --font-size-sm: 13.5px;
     --font-size-vsm: 11px;
+    --font-size-vvsm: 8px;
 
     --max-width: 150px;
     --max-icon: 70px;
@@ -100,6 +106,7 @@
     --font-size-md: 24px;
     --font-size-sm: 15px;
     --font-size-vsm: 13px;
+    --font-size-vvsm: 10px;
 
     --max-width: 165px;
     --max-icon: 75px;
@@ -120,6 +127,7 @@
     --font-size-md: 26.5px;
     --font-size-sm: 16.5px;
     --font-size-vsm: 14.5px;
+    --font-size-vvsm: 12.5px;
 
     --max-width: 185px;
     --max-icon: 85px;
@@ -135,6 +143,7 @@
     --font-size-md: 31px;
     --font-size-sm: 18px;
     --font-size-vsm: 16px;
+    --font-size-vvsm: 14px;
 
     --max-width: 200px;
     --max-icon: 90px;
@@ -150,6 +159,7 @@
     --font-size-md: 35px;
     --font-size-sm: 20px;
     --font-size-vsm: 18px;
+    --font-size-vvsm: 16px;
 
     --max-width: 220px;
     --max-icon: 100px;
@@ -293,7 +303,7 @@ body {
 .hover-text {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: left;
   /* margin-top: 20%; */
 }
 
@@ -301,7 +311,7 @@ body {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  margin-top: -5%;
+  margin-top: 8vh;
   float: right;
   margin-right: 2%;
 }
@@ -515,7 +525,7 @@ span.highlight_2 {
 
 /*설명 부분*/
 .hover-info{
-  font-size: var(--font-size-vsm);
+  font-size: var(--font-size-vvsm);
   margin-top: 3vh;
   color: rgb(47, 0, 255);
 }
