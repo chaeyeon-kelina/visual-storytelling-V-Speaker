@@ -1,6 +1,7 @@
 @import url("https://webfontworld.github.io/Montserrat/Montserrat.css");
 @import url("https://webfontworld.github.io/score/SCoreDream.css");
 @import url("https://webfontworld.github.io/tvn/EnjoyStories.css");
+@import url('https://webfontworld.github.io/kyobobook/KyoboHandwriting2019.css');
 
 /* .section {
   width: 100vw;
@@ -19,7 +20,7 @@
   --font-size-vsm: 4px;
   --font-size-vvsm: 3px;
 
-  --max-width: 95px;
+  --max-width: 100px;
   --max-icon: 40px;
 }
 @media (min-width: 800px) {
@@ -33,7 +34,7 @@
     --font-size-vsm: 3px;
     --font-size-vvsm: 2px;
 
-    --max-width: 90px;
+    --max-width: 102px;
     --max-icon: 45px;
   }
 }
@@ -48,7 +49,7 @@
     --font-size-vsm: 6px;
     --font-size-vvsm: 3px;
 
-    --max-width: 110px;
+    --max-width: 105px;
     --max-icon: 50px;
   }
 }
@@ -63,7 +64,7 @@
     --font-size-vsm: 7px;
     --font-size-vvsm: 3px;
 
-    --max-width: 120px;
+    --max-width: 110px;
     --max-icon: 55px;
   }
 }
@@ -78,7 +79,7 @@
     --font-size-vsm: 10px;
     --font-size-vvsm: 8px;
 
-    --max-width: 135px;
+    --max-width: 120px;
     --max-icon: 65px;
   }
 }
@@ -93,8 +94,13 @@
     --font-size-vsm: 11px;
     --font-size-vvsm: 8px;
 
-    --max-width: 150px;
+    --max-width: 140px;
     --max-icon: 70px;
+  }
+}
+@media (min-width: 1270px) {
+  :root {
+    --max-width: 147px;
   }
 }
 @media (min-width: 1350px) {
@@ -108,13 +114,13 @@
     --font-size-vsm: 13px;
     --font-size-vvsm: 10px;
 
-    --max-width: 165px;
+    --max-width: 155px;
     --max-icon: 75px;
   }
 }
 @media (min-width: 1450px) {
   :root {
-    --max-width: 177px;
+    --max-width: 170px;
     --max-icon: 80px;
   }
 }
@@ -129,7 +135,7 @@
     --font-size-vsm: 14.5px;
     --font-size-vvsm: 12.5px;
 
-    --max-width: 185px;
+    --max-width: 172px;
     --max-icon: 85px;
   }
 }
@@ -145,7 +151,7 @@
     --font-size-vsm: 16px;
     --font-size-vvsm: 14px;
 
-    --max-width: 200px;
+    --max-width: 190px;
     --max-icon: 90px;
   }
 }
@@ -161,7 +167,7 @@
     --font-size-vsm: 18px;
     --font-size-vvsm: 16px;
 
-    --max-width: 220px;
+    --max-width: 210px;
     --max-icon: 100px;
   }
 }
@@ -370,8 +376,7 @@ body {
   flex-basis: auto;
 }
 .pic img {
-  /* max-width: var(--max-width); */
-  width: 167px;
+  max-width: var(--max-width);
 }
 
 /* 사진 배치 */
@@ -449,7 +454,8 @@ body {
   font-family: "SCoreDream";
   font-size: var(--font-size-sm);
   font-weight: 400;
-  margin-left: 2%;
+  max-width: 85%;
+  margin-left: 7%;
   margin-top: 3%;
   margin-bottom: 10px;
   transform: scale(0.9);
@@ -461,7 +467,8 @@ body {
   font-family: "SCoreDream";
   font-size: var(--font-size-sm);
   font-weight: 400;
-  margin-left: 2%;
+  max-width: 85%;
+  margin-left: 7%;
   margin-bottom: 10px;
   /* margin-top: -20px; */
   transform: scale(0.9);
@@ -578,10 +585,10 @@ span.high_light {
 }
 
 .key_img > img {
-  margin-left: 6%;
-  width: 90%;
+  margin-left: 10%;
+  width: 80%;
   float: left;
-  /* margin-top: 13%; */
+  margin-top: 8%;
   transform: rotate(-5deg);
 }
 
@@ -596,7 +603,7 @@ span.high_light {
 .src_content {
   font-family: "Montserrat";
   font-size: var(--font-size-vsm);
-  margin-left: 3%;
+  margin-left: 7%;
   margin-top: 5%;
   width: 80%;
 }
