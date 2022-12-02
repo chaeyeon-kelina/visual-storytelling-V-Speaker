@@ -44,7 +44,7 @@
     --font-size-lg: 23px;
     --font-size-slg: 18px;
     --font-size-md: 13px;
-    --font-size-sm: 9px;
+    --font-size-sm: 8px;
     --font-size-vsm: 6px;
     --font-size-vvsm: 3px;
 
@@ -59,7 +59,7 @@
     --font-size-lg: 24px;
     --font-size-slg: 19px;
     --font-size-md: 14px;
-    --font-size-sm: 10px;
+    --font-size-sm: 9px;
     --font-size-vsm: 7px;
     --font-size-vvsm: 3px;
 
@@ -74,7 +74,7 @@
     --font-size-lg: 27px;
     --font-size-slg: 23px;
     --font-size-md: 17px;
-    --font-size-sm: 12px;
+    --font-size-sm: 11px;
     --font-size-vsm: 10px;
     --font-size-vvsm: 8px;
 
@@ -89,7 +89,7 @@
     --font-size-lg: 33px;
     --font-size-slg: 28px;
     --font-size-md: 18px;
-    --font-size-sm: 13.5px;
+    --font-size-sm: 12.5px;
     --font-size-vsm: 11px;
     --font-size-vvsm: 8px;
 
@@ -104,7 +104,7 @@
     --font-size-lg: 39px;
     --font-size-slg: 34px;
     --font-size-md: 24px;
-    --font-size-sm: 15px;
+    --font-size-sm: 14px;
     --font-size-vsm: 13px;
     --font-size-vvsm: 10px;
 
@@ -141,7 +141,7 @@
     --font-size-lg: 46px;
     --font-size-slg: 41px;
     --font-size-md: 31px;
-    --font-size-sm: 18px;
+    --font-size-sm: 17px;
     --font-size-vsm: 16px;
     --font-size-vvsm: 14px;
 
@@ -157,7 +157,7 @@
     --font-size-lg: 50px;
     --font-size-slg: 45px;
     --font-size-md: 35px;
-    --font-size-sm: 20px;
+    --font-size-sm: 19px;
     --font-size-vsm: 18px;
     --font-size-vvsm: 16px;
 
@@ -167,7 +167,7 @@
 }
 html {
   /* 최소 창 크기 */
-  min-width: 800px;
+  min-width: 900px;
 }
 
 html,
@@ -211,7 +211,7 @@ body {
   position: absolute;
   right: 0;
   /* top: 0; */
-  top: 22px;
+  top: -20px;
   padding-top: 5%;
   padding-left: 2%;
 }
@@ -571,7 +571,9 @@ span.high_light {
   border-radius: 5px;
   padding: 2%;
   margin-top: 0;
+  margin-left: 7%;
   margin-bottom: 0;
+  max-width: 80%;
   /* background-color: rgb(217, 217, 217); */
 }
 
@@ -720,7 +722,7 @@ span.high_light {
   padding: 2%;
   margin-top: 1%;
   margin-bottom: 1%;
-  background-color: rgb(227, 240, 236);
+  background-color: rgb(227, 240`, 236);
   line-height: 2;
 }
 /* .page-wrapper div {
@@ -737,7 +739,7 @@ span.high_light {
   color: rgb(255, 255, 255);
   /* margin-top: 20px; */
   /* margin-bottom: 10px; */
-  margin-top: 2%;
+  margin-top: -4%;
   margin-left: 5%;
   -webkit-text-stroke: 1px rgb(57, 72, 67);
   text-shadow: 0 1px 0 rgba(64, 64, 64, 0.762), 0 2px 0 rgba(64, 64, 64, 0.762),
@@ -746,12 +748,13 @@ span.high_light {
     0 8px 0 transparent, 0 9px 0 transparent,
     0 10px 10px rgba(64, 64, 64, 0.762);
 }
+
 #member_img {
   position: relative;
   width: 70%;
-  /* margin-top: 30%; */
-  /* margin-left: 20%; */
-  padding-top: 5%;
-  padding-bottom: 5%;
-  /* padding: 0; */
+  margin-top: 30%; 
+  margin-left: 20%;
+  padding: 0;
+  /* padding-top: 5%;
+  padding-bottom: 5%; */
 }
